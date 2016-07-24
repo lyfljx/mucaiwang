@@ -1,0 +1,65 @@
+[ 2016-05-24T00:54:46+08:00 ] 127.0.0.1 /mucaiwang//index.php/Admin/Check/check
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-05-24T01:11:49+08:00 ] 127.0.0.1 /mucaiwang//index.php/Admin/Check/check/offer_id/11
+ERR: 1062:Duplicate entry '11' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `mucai_offer` (`offer_id`,`offer_check`) VALUES ('11','已审核')
+
+[ 2016-05-24T09:37:48+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/Array
+ERR: 非法操作:Array
+
+[ 2016-05-24T09:39:41+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/Array
+ERR: 非法操作:Array
+
+[ 2016-05-24T09:47:15+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/Array
+ERR: 非法操作:Array
+
+[ 2016-05-24T09:49:10+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/Array
+ERR: 非法操作:Array
+
+[ 2016-05-24T09:50:01+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/Array
+ERR: 非法操作:Array
+
+[ 2016-05-24T15:24:01+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Check/check_offer
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-05-24T15:24:05+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Check/check_offer
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-05-24T15:32:39+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Check/offer_user/offer_user_id/0
+ERR: 非法操作:offer_user
+
+[ 2016-05-24T15:58:58+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Check/check_offer
+ERR: Think\Model:showtime方法不存在！
+
+[ 2016-05-24T15:59:35+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Check/check_offer
+ERR: Think\Model:showtime方法不存在！
+
+[ 2016-05-24T16:00:18+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Check/check_offer
+ERR: Think\Model:showtime方法不存在！
+
+[ 2016-05-24T16:25:34+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Check/check_offer
+ERR: 1054:Unknown column 'offer_id>1' in 'field list'
+ [ SQL语句 ] : SELECT `offer_id>1` FROM `mucai_offer` LIMIT 1  
+
+[ 2016-05-24T16:31:29+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Check/check_offer
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mucai_offer` WHERE ( Array ) LIMIT 1  
+
+[ 2016-05-24T16:32:16+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Check/check_offer
+ERR: 1054:Unknown column '$v' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mucai_offer` WHERE ( $v ) LIMIT 1  
+
+[ 2016-05-24T21:18:09+08:00 ] 127.0.0.1 /mucaiwang//index.php/Admin/Buy/buyList.html
+ERR: 1146:Table 'mucai.mucai_purchase_info' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_purchase_info`
+
+[ 2016-05-24T21:29:20+08:00 ] 127.0.0.1 /mucaiwang//index.php/Admin/Offer/offerlist.html
+ERR: 无法加载控制器:Offer
+
+[ 2016-05-24T22:34:13+08:00 ] 127.0.0.1 /mucaiwang//index.php/Admin/Rbac/altNode/nid/18/pid/15/level/3.html
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Rbac/altNode.html
+
+[ 2016-05-24T22:34:55+08:00 ] 127.0.0.1 /mucaiwang//index.php/Admin/Rbac/altNode/nid/18/pid/15/level/3.html
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Rbac/altNode.html
+

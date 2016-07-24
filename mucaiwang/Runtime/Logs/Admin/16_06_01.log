@@ -1,0 +1,82 @@
+[ 2016-06-01T02:06:34+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/addcate.html
+ERR: 无法加载控制器:Pro
+
+[ 2016-06-01T02:20:56+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_class_id/1
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-01T02:21:28+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_class_id/1
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-01T02:22:26+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_class_id/1
+ERR: Think\Model:delect方法不存在！
+
+[ 2016-06-01T02:23:14+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_class_id/1
+ERR: 1451:Cannot delete or update a parent row: a foreign key constraint fails (`mucai`.`mucai_pro_class`, CONSTRAINT `mucai_pro_class_ibfk_1` FOREIGN KEY (`pro_pclass_id`) REFERENCES `mucai_pro_pclass` (`pro_pclass_id`))
+ [ SQL语句 ] : DELETE FROM `mucai_pro_pclass` WHERE `pro_pclass_id` = 1
+
+[ 2016-06-01T02:28:12+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_class_id/1
+ERR: 1054:Unknown column 'pro_class_id' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `mucai_pro_pclass` WHERE ( pro_class_id= 1 )
+
+[ 2016-06-01T02:29:39+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_class_id/1
+ERR: 1054:Unknown column 'pro_class_id' in 'where clause'
+ [ SQL语句 ] : DELETE FROM `mucai_pro_pclass` WHERE ( pro_class_id= 1 )
+
+[ 2016-06-01T02:38:16+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/
+ERR: 参数错误或者未定义:pro_class_id
+
+[ 2016-06-01T02:39:40+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_class_id/1
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Pro/delcate.html
+
+[ 2016-06-01T02:56:22+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/2/pro_class_id/10
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Pro/delcate.html
+
+[ 2016-06-01T02:57:40+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/2/pro_class_id/10
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Pro/delcate.html
+
+[ 2016-06-01T02:57:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/3/pro_class_id/7
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Pro/delcate.html
+
+[ 2016-06-01T02:57:58+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/3/pro_class_id/7
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Pro/delcate.html
+
+[ 2016-06-01T02:59:57+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_class_id/10
+ERR: 参数错误或者未定义:pro_pclass_id
+
+[ 2016-06-01T03:02:18+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/3
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Pro/delcate.html
+
+[ 2016-06-01T03:06:58+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/3
+ERR: 参数错误或者未定义:pro_class_id
+
+[ 2016-06-01T03:10:41+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/3/pro_class_id/7
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `mucai_pro_class` WHERE ( pro_class_id= )
+
+[ 2016-06-01T03:11:08+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/3/pro_class_id/7
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `mucai_pro_class` WHERE ( pro_class_id=  )
+
+[ 2016-06-01T03:16:52+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/3/pro_class_id/7
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `mucai_pro_class` WHERE ( pro_class_id=  )
+
+[ 2016-06-01T12:55:45+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/3/pro_class_id/7
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `mucai_pro_class` WHERE ( pro_class_id= )
+
+[ 2016-06-01T13:01:44+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/addcate.html
+ERR: 1054:Unknown column 'pro_class' in 'field list'
+ [ SQL语句 ] : INSERT INTO `mucai_pro_pclass` (`pro_pclass`,`pro_class`) VALUES ('HOMHMU','FDSF')
+
+[ 2016-06-01T13:03:43+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/addcate.html
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`mucai`.`mucai_pro_class`, CONSTRAINT `mucai_pro_class_ibfk_1` FOREIGN KEY (`pro_pclass_id`) REFERENCES `mucai_pro_pclass` (`pro_pclass_id`))
+ [ SQL语句 ] : INSERT INTO `mucai_pro_class` () VALUES ()
+
+[ 2016-06-01T13:06:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/addcate.html
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`mucai`.`mucai_pro_class`, CONSTRAINT `mucai_pro_class_ibfk_1` FOREIGN KEY (`pro_pclass_id`) REFERENCES `mucai_pro_pclass` (`pro_pclass_id`))
+ [ SQL语句 ] : INSERT INTO `mucai_pro_class` () VALUES ()
+
+[ 2016-06-01T23:59:22+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/delcate/pro_pclass_id/9/pro_class_id/21
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Pro/delcate.html
+

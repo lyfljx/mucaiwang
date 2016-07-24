@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>审核-报价</title>
+</head>
+<body>
+<div><a href="__CONTROLLER__/looklist"><h4>返回</h4></a></div>
+<table width="100%" border="1px solid " cellpadding="2" cellspacing="0">
+    <!--查看已审核的订单-->
+    <tr>
+        <td align="center">订单序号</td>
+        <td align="center">产品名字</td>
+        <td align="center">分类1</td>
+        <td align="center">分类2</td>
+        <td align="center">产品价格</td>
+        <td align="center">产品规格</td>
+        <td align="center">报价人</td>
+        <td align="center">求购人</td>
+        <td align="center">产品描述</td>
+        <td align="center">创建时间</td>
+        <td align="center">截止时间</td>
+        <td align="center">审核状态</td>
+        <td align="center">是否过期</td>
+
+        <!--<td colspan="2" align="center">操作</td>-->
+
+    </tr>
+
+    <foreach name="info" item="v" key="k">
+        <foreach name="user" item="vv">
+            <!--//这样更加确定了对应的表单里面的名称是注册表中的名称-->
+            <if condition=" $v['offer_user_id'] eq $vv['user_id']">
+                <tr>
+                    <td align="center" bgcolor="#7fffd4">{$v.offer_id}</td>
+                    <td align="center">{$v.offer_pro_name}</td>
+                    <!--遍历数组取得对应offer_id的分类-->
+                    <foreach name="class" item="vvv">
+                        <if condition="$vvv['offer_id'] eq $v['offer_id']">
+                            <td align="center" bgcolor="#7fffd4">{$vvv.pro_pclass}</td>
+                            <td align="center" bgcolor="#7fffd4">{$vvv.pro_class}</td>
+
+                        </if>
+                    </foreach>
+
+                    <td align="center">{$v.offer_price}</td>
+                    <td align="center" bgcolor="#7fffd4">{$v.offer_p_size}</td>
+                    <td align="center"><a
+                            href="__CONTROLLER__/lookuser/offer_user_id/{$v.offer_user_id}">{$vv.user_name}</a></td>
+                    <!--每一次的循环中，其实$v['offer_id']在$data数组中遍历了全部的元素，有就会输出true，没有就会输出false-->
+                    <td align="center">
+                        <if condition="in_array($v['offer_id'],$data) eq 0">暂无</if>
+                        <if condition="in_array($v['offer_id'],$data) neq 0"><a
+                                href="__CONTROLLER__/buyList/offer_id/{$v.offer_id}">查看</a></if>
+                    </td>
+
+                    <td align="center">
+                        <if condition="$v['offer_description'] neq null">
+                            <a href="{:U('offerDesc',array(offer_id => $v['offer_id']))}">查看</a>
+
+
+                            <else/>
+
+                            暂无
+
+                        </if>
+
+                    </td>
+
+
+                    <td align="center" bgcolor="#7fffd4"><?php echo date("Y-m-d",$v["offer_create_time"]);?></td>
+                    <td align="center"><?php echo date('Y-m-d',$v['offer_cut_time']);?></td>
+                    <td align="center">
+                        <if condition='$v["offer_check"]==1'>已审核通过</if>
+                    </td>
+
+                    <td align="center">
+                        <if condition='$v["offer_status"] eq  1 '>未过期</if>
+                        <if condition='$v["offer_status"] eq  2 '>已过期</if>
+                    </td>
+                    <!--<td align="center">&nbsp;<a href="__CONTROLLER__/check/offer_id/{$v.offer_id}">发送邮件</a>&nbsp;&nbsp;</td>-->
+                    <!--<td align="center">&nbsp;<a href="__CONTROLLER__/check_delete"><img src="<?php echo ADMIN_IMG_URL ?>4.jpg"/></a>&nbsp;&nbsp;</td>-->
+
+                    <!--点下确认键之后，确定发送邮件-->
+                    <!--<td align="center">&nbsp;&nbsp;<a href="">发送邮件</a>>&nbsp;&nbsp;</td>-->
+                    <!--<img src="<?php echo ADMIN_IMG_URL ?>2.jpg"/>-->
+            </if>
+            </tr>
+
+        </foreach>
+    </foreach>
+    <tr>
+        <td colspan="20" style="text-align: center;">
+            {$pagelist}
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

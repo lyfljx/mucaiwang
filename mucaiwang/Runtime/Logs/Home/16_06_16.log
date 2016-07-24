@@ -1,0 +1,31 @@
+[ 2016-06-16T15:15:05+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/alterOffer/offer_id/51
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-16T19:18:38+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/alterOffer/offer_id/51
+ERR: 模板不存在:E:/web/php99/mucaiwang/Home/View/Offer/alterOffer.html
+
+[ 2016-06-16T19:46:58+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/alterOffer.html
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-16T19:56:32+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/alterOffer/offer_id/51.html
+ERR: 1062:Duplicate entry '51' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `mucai_offer` (`offer_create_time`,`offer_user_id`,`offer_id`,`offer_pro_name`,`offer_p_size`,`offer_price`,`offer_cut_time`,`pclass`,`class`,`offer_description`) VALUES ('1466077994','14','51','vchvhj\'','法规的规定非','面议','2016-06-13','0','0','FDSFSDFS')
+
+[ 2016-06-16T20:22:32+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/addoffer1
+ERR: 非法操作:addoffer1
+
+[ 2016-06-16T20:30:40+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/alteroffer
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-16T20:30:48+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/alterOffer
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-16T20:39:32+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/alterOffer/51
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-16T20:39:39+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/alterOffer/51
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-16T20:39:45+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/alterOffer/50
+ERR: 参数错误或者未定义:offer_id
+

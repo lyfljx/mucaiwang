@@ -1,0 +1,4 @@
+[ 2016-06-26T22:17:22+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Buy/buyList.html
+ERR: 1054:Champ 'offer_id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `mucai_buy` WHERE ( offer_id =1 ) LIMIT 1  
+

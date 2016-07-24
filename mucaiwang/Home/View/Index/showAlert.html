@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{$new.title}</title>
+<meta name="keywords" content="板材,非洲木材">
+<meta name="description" content="板材将成非洲木材市场出口的主要方式">
+<link rel="shortcut icon" href="http://style.chinatimber.org/global/img/favicon.ico"/>
+<link type="text/css" rel="stylesheet" href="http://style.chinatimber.org/news/css/css.css" /> 
+<link type="text/css" rel="stylesheet" href="http://style.chinatimber.org/news/css/news.css" /> 
+<link href="http://style.chinatimber.org/global/css/global.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{$Think.const.HOME_CSS_URL}global.css"/>
+<link rel="stylesheet" type="text/css" href="{$Think.const.HOME_CSS_URL}shen-he.css"/>
+
+<style type="text/css">
+/*重定义链接颜色*/
+a {color:#333;
+	text-decoration:none;}
+a:hover {color:#A53158;
+	text-decoration:underline;
+	}
+.nav a{text-decoration:none;}
+.nav-t a { color:#FFF}
+</style>
+
+<script type="text/javascript" src="http://style.chinatimber.org/global/js/global.js"></script>
+
+<script type="text/javascript">
+function doZoom(size){
+  var artibody = document.getElementById('artibody');
+	if(!artibody){
+	  return;
+     }
+  var artibodyChild = artibody.childNodes;
+  artibody.style.fontSize = size + 'px';
+  SetCookie('chinatimberFont',size)
+   for(var i = 0; i < artibodyChild.length; i++){
+	 if(artibodyChild[i].nodeType == 1){
+	   artibodyChild[i].style.fontSize = size + 'px';
+	 }
+   }
+}
+function SetCookie(name,value){
+ var Days=30;
+ var exp=new Date();
+ exp.setTime(exp.getTime() + Days*24*60*60*1000);
+ document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+}
+</script>
+
+</head>
+
+<body>
+
+
+<div id="header">
+    
+  </div>
+  <div id="search"> 
+     <div><a href="#"><img src="{$Think.const.HOME_IMG_URL}logo.png"/></a></div>
+     <div class="logo-title"><span>权威·专业·专著</span></div>
+     <p class="arch"><input type="text" name="" value="请输入内容：" id="" class="text"/><input type="submit" name="" value="搜索" class="submit"/></p>
+  </div>
+    
+  <div id="nav">
+    <ul>
+			<li><a href="{:U('Home/Index/index')}">首页</a></li>
+			<li><a href="#">木材商城</a></li>
+			<li><a href="{:U('Home/Index/allBuy')}">求购</a></li>
+			<li><a href="#">报价</a></li>
+		        <li><a href="{:U('Home/Index/allNew')}">新闻</a></li>
+        <li><a href="{:U('Home/Index/allAlert')}">快讯</a></li>
+			<li><a href="#">行情</a></li>
+			<li><a href="#">联系我们</a></li>
+    </ul>
+  </div>
+
+
+
+
+<script type="text/javascript">
+document.getElementById("nav-item10").className="selcurrent"; 
+changesclass("s-item5");
+</script>
+
+
+<div class="space1"></div>
+<div class="content">
+	<div class="c1 border9">
+		<div class="news_title"><h1>{$alert.title}</h1><div class="news_au">&nbsp;&nbsp;时间:{$alert.time|date='y-m-d H:i:s',###}&nbsp;&nbsp字号【<a href="javascript:doZoom(16)">大</a> <a href="javascript:doZoom(14)">中</a> <a href="javascript:doZoom(12)">小</a>】</div></div>
+		<div class="news_line"></div>
+		<div class="news_content">
+		
+		<font style="line-height:25px;font-size:14px;" class="artibody" id="artibody">
+				<if condition="$alert['jpg']==1">
+				<p><img src="<?php echo ADMIN_IMG_URL?>alert/{$alert['time']|date="Ymd",###}/{$alert['id']}.jpg" width="245" height="200"></p>
+			</if>
+	{$alert.textarea}
+		</div>
+		<div class="spaces1"></div>
+		
+		
+		
+		
+       <!-- 
+        <div style=" width:660px; height:60px; text-align:center; margin:10px 0 10px 0">
+        <script type="text/javascript">
+/*640*60，创建于2013-7-16*/
+var cpro_id = "u1321039";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+        </div>
+        -->
+	</div>
+	
+
+</div>
+<div class="foot_bg">
+<div class="space1"></div>
+<div class="space1"></div>
+<div class="foot_line"></div>
+<div class="foot">
+	<div class="foot_title"><a href="/about/about.asp" title="关于我们">关于我们</a> | <a href="/about/gg.asp" title="广告服务">广告服务</a> | <a href="/about/bank.asp" title="银行汇款">银行汇款</a> | <a href="/about/help.asp" title="会员帮助">会员帮助</a> | <a href="/about/tel.asp" title="联系我们">联系我们</a> | <a href="/about/guest.asp" title="访客留言">访客留言</a> | <a href="/about/m.asp" title="免责声明">免责声明</a> | <a href="/about/f.asp" title="服务条款">服务条款</a> | <a href="/about/d.asp" title="网站地图">网站地图</a></div>
+	<div class="foot_copy">版权所有 中国木材网 Copyright&copy;2015 chinatimber.org. All Rights Reserved </div>
+	<div class="foot_beian">增值电信业务经营许可证：<a href="/about/icp.asp" target="_blank">粤B2-20100348</a> ICP备案：<a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">粤ICP备14005127号</a></span><span style="display:none"><!--统计开始--><script src="/stat.js" type="text/javascript"></script><!--统计结束--></div>
+	<div class="foot_kefu">会员客服QQ:<a target=blank href=tencent://message/?uin=2095243485&Site=www.chinatimber.org&Menu=yes><img border="0" src="/image/icon_qqonline.gif" alt="点击联系" /></a>&nbsp;&nbsp;广告合作QQ:<a target=blank href=tencent://message/?uin=914056606&Site=www.chinatimber.org&Menu=yes><img border="0" src="/image/icon_qqonline.gif" alt="点击联系" /></a>&nbsp;&nbsp;中国木材网QQ群：<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=8a543ced3a31cf8e2cdb159be4d40bbd761a6ec27a5cade61232bcae665efaca"><img border="0" src="/image/qqgroup.png" alt="中国木材网QQ群" title="中国木材网QQ群" /></a></div>
+	<div class="foot_icp"><a href="http://210.76.65.188/" rel="nofollow"><img src="/style/global/img/waicon.gif" width="40" height="48" border="0"  /></a> <a href="http://210.76.65.188/" rel="nofollow"><img src="/style/global/img/gt.gif" width="40" height="48" border="0"  /></a></div>
+</div>	
+</div>
+</body>
+</html>

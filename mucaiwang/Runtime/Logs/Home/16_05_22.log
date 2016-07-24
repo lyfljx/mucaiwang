@@ -1,0 +1,24 @@
+[ 2016-05-22T15:34:11+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offer
+ERR: 无法加载控制器:Offer
+
+[ 2016-05-22T15:34:50+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Login/login
+ERR: 无法加载控制器:Login
+
+[ 2016-05-22T16:48:53+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/login
+ERR: 非法操作:login
+
+[ 2016-05-22T21:22:39+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/r
+ERR: 非法操作:r
+
+[ 2016-05-22T21:22:48+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/register
+ERR: 非法操作:register
+
+[ 2016-05-22T22:52:44+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/HOME_JS_URLjs/list.js
+ERR: 非法操作:HOME_JS_URLjs
+
+[ 2016-05-22T22:53:25+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/HOME_JS_URLlist.js
+ERR: 非法操作:HOME_JS_URLlist.js
+
+[ 2016-05-22T23:46:14+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/showoffer
+ERR: 模板不存在:E:/web/php99/mucaiwang/Home/View/Index/showoffer.html
+

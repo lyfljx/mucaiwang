@@ -1,0 +1,8 @@
+[ 2016-06-14T00:06:37+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMailer/offer_id/1/buyer_id/14/status/1
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `mucai_offer_buyer` WHERE ( offer_id= 1,buyer_id=14 ) LIMIT 1  
+
+[ 2016-06-14T00:07:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMailer/offer_id/1/buyer_id/14/status/1
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `mucai_offer_buyer` WHERE ( offer_id= 1,buyer_id=14 ) LIMIT 1  
+

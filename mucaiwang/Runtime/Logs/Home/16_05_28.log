@@ -1,0 +1,12 @@
+[ 2016-05-28T01:06:35+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/showCom
+ERR: 参数错误或者未定义:com_id
+
+[ 2016-05-28T01:07:40+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/showCom/com_id/13
+ERR: 模板不存在:E:/web/php99/mucaiwang/Home/View/Offer/showCom.html
+
+[ 2016-05-28T01:23:33+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/buyList/
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-05-28T01:23:53+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/buyList/11
+ERR: 参数错误或者未定义:offer_id
+

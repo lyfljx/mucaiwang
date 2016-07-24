@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><a href="__CONTROLLER__/offerlist/offer_user_id/{$Think.session.home_id}"><h4>返回</h4></a></div>
+<table width="100%" border="1px dashed" cellpadding="2" cellspacing="0">
+    <tr>
+        <td align="center">求购人</td>
+        <td align="center">公司名称</td>
+        <td align="center">邮箱</td>
+        <td align="center">求购人</td>
+        <td align="center">职位</td>
+        <td align="center">电话</td>
+        <td align="center">QQ</td>
+        <td align="center">固定电话</td>
+
+        <td colspan="1" align="center">操作</td>
+        <!--<td align="center">查看记录</td>-->
+
+    </tr>
+    <!--这是一个四维数组-->
+       <!--先判断邮箱状态然后再遍历其他的数据-->
+        <foreach name="mail" item="vvv" key="kkk">
+
+                 <if condition="$vvv['email'] eq 1">
+                     <!--只有后台审核发邮件之后才可以看得见-->
+
+                 <foreach name="com_name" item="v" key="k">
+                       <foreach name="com_user" item="vv" key="kk">
+
+               <!--因为register_user表与com表是一对一的关系，所以key也是一一对应的，通过k的比较来显示下面-->
+                           <if condition=" $k eq $kk ">
+
+
+            <tr>
+                    <td align="center">{$vv.user_name}</td>
+               <td align="center" bgcolor="#7fffd4"><a href="__CONTROLLER__/showCom/com_id/{$v.com_id}">
+                         {$v.com_name}</a></td>
+                    <td align="center">{$vv.user_email}</td>
+                    <td align="center" bgcolor="#7fffd4">{$vv.user_true_name}</td>
+                    <td align="center">{$vv.user_job}</td>
+                    <td align="center" bgcolor="#7fffd4">{$vv.user_phone}</td>
+                    <td align="center">{$vv.user_qq}</td>
+                    <td align="center" bgcolor="#7fffd4">{$vv.user_fixed_phone}</td>
+                    <td align="center"><a href="">发送邮件</a></td>
+
+                </tr>
+
+                  </if>
+                       </foreach>
+                           </foreach>
+                     </if>
+    </foreach>
+
+    <tr>
+        <td colspan="20" style="text-align: center;">
+            {$pagelist}
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

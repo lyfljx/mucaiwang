@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><a href="__CONTROLLER__/offerlist/offer_user_id/{$Think.session.home_id}"><h4>返回</h4></a></div>
+<table width="100%" border="1px dashed" cellpadding="2" cellspacing="0">
+    <tr>
+        <td align="center">订单序号</td>
+        <td align="center">产品名字</td>
+        <td align="center">分类1</td>
+        <td align="center">分类2</td>
+        <td align="center">产品价格</td>
+        <td align="center">产品规格</td>
+        <td align="center">求购人</td>
+        <td align="center">产品描述</td>
+        <td align="center">创建时间</td>
+        <td align="center">截止时间</td>
+        <td align="center">审核状态</td>
+        <td align="center">是否过期</td>
+    </tr>
+    <foreach name="info" item="v">
+        <foreach name="OfferClass" item="vv">
+            <!--//整数之间的比较，时间戳就是一个int类型整数-->
+            <if condition=" $v['offer_id'] eq $vv['offer_id']">
+
+                <if condition="$v['offer_status'] eq  2 ">
+                    <!--判断是否为过期订单-->
+                <tr>
+                    <td align="center" bgcolor="#7fffd4">{$v.offer_id}</td>
+                    <td align="center">{$v.offer_pro_name}</td>
+                    <td align="center" bgcolor="#7fffd4">{$vv.pro_pclass}</td>
+                    <td align="center" bgcolor="#7fffd4">{$vv.pro_class}</td>
+                    <td align="center">{$v.offer_price}</td>
+                    <td align="center" bgcolor="#7fffd4">{$v.offer_p_size}</td>
+                    <!--<td align="center"><a-->
+                            <!--href="__CONTROLLER__/lookUser/offer_user_id/{$v.offer_user_id}/offer_id/{$v.offer_id}">{$user.user_name}</a>-->
+                    <!--</td>-->
+                    <td align="center">
+                        <if condition="in_array($v['offer_id'],$data) eq 0">暂无</if>
+                        <if condition=" in_array($v['offer_id'],$data) neq 0">
+                            <a href="__CONTROLLER__/buyList/offer_id/{$v.offer_id}">查看</a>
+                        </if>
+                    </td>
+                    <td align="center">
+                        <if condition="$v['offer_description'] neq null">
+                            <a href="{:U('offerDesc',array(offer_id => $v['offer_id']))}">查看</a>
+
+                            <else />
+                            暂无
+                        </if>
+                    </td>
+                    <td align="center" bgcolor="#7fffd4"><?php echo date("Y-m-d",$v["offer_create_time"]);?></td>
+                    <td align="center"><?php echo date('Y-m-d',$v['offer_cut_time']);?></td>
+                    <!--<td align="center">{$v.offer_check}</td>-->
+                    <td align="center">
+                        <if condition='$v["offer_check"]==0'>未审核</if>
+                        <if condition='$v["offer_check"]==1'>已审核通过</if>
+                        <if condition='$v["offer_check"]==2'>已审核未通过</if>
+                    </td>
+                    <td align="center">
+                        <if condition='$v["offer_status"] eq  1 '>未过期</if>
+                        <if condition='$v["offer_status"] eq  2 '>已过期</if>
+                    </td>
+                    <!--<td align="center">&nbsp;<a href="__CONTROLLER__/alterOffer/offer_id/{$v.offer_id}">修改</a>&nbsp;&nbsp;</td>-->
+
+                </tr>
+            </if>
+                </if>
+        </foreach>
+    </foreach>
+    <tr>
+        <td colspan="20" style="text-align: center;">
+            {$pagelist}
+        </td>
+    </tr>
+</table>
+</body>
+</html>

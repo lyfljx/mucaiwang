@@ -1,0 +1,84 @@
+[ 2016-06-02T00:17:44+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offer
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-02T01:01:19+08:00 ] 127.0.0.1 /mucaiwang//index.php/Offer/offer.html
+ERR: 1054:Unknown column 'offer_user_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mucai_register_user` WHERE ( offer_user_id=19 ) LIMIT 1  
+
+[ 2016-06-02T11:00:52+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-02T11:01:26+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-02T11:59:02+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id//offer_buyer_id/19
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T12:00:00+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id//offer_buyer_id/19
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T12:47:55+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy_order/offer_id/11
+ERR: 1062:Duplicate entry '11' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `mucai_offer` (`offer_user_id`,`offer_create_time`,`offer_id`,`offer_pro_name`,`offer_price`,`offer_p_size`,`offer_pro_class`,`offer_origin_place`,`offer_cut_time`,`offer_description`,`offer_com_id`) VALUES ('19','1464842869','11',' ewwe','1','fsf','esfa','faw','',' afwfrW','14')
+
+[ 2016-06-02T12:48:53+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy_order/offer_id/11
+ERR: 1062:Duplicate entry '11' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `mucai_offer` (`offer_user_id`,`offer_create_time`,`offer_id`,`offer_pro_name`,`offer_price`,`offer_p_size`,`offer_pro_class`,`offer_origin_place`,`offer_cut_time`,`offer_description`,`offer_com_id`) VALUES ('19','1464842915','11','DSADF','DFSAFD','DASFA','ASDF','SAFAS','',' ','14')
+
+[ 2016-06-02T12:53:34+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T12:54:46+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy.html
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-02T12:54:52+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T12:55:38+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy.html
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-02T12:56:23+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy.html
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-02T12:56:28+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:03:06+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:03:51+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:04:08+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:04:28+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:04:39+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:04:50+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:06:45+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:08:17+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:09:19+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:10:06+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:10:16+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:10:30+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-06-02T13:11:21+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy/offer_id/11.html
+ERR: 参数错误或者未定义:home_id
+

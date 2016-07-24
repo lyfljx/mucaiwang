@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<css file='{$Think.const.ADMIN_CSS_URL}public.css'/>
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<th>ID</th>
+			<th>用户名称</th>
+			<th>上一次登录时间</th>
+			<th>上一次登录IP</th>
+			<th>锁定状态</th>
+			<th>用户所属组别</th>
+			<th>操作</th>
+		</tr>
+		
+		 <foreach name='user' item='v'>
+		 	<tr>
+		 		<td>{$v.id}</td>
+		 		<td>{$v.username}</td>
+		 		<td>{$v.logintime|date='y-m-d H:i:s',###}</td>
+		 		<td>{$v.loginip}</td>
+		 		<td>
+		 			<if condition='$v["lock"]'>锁定</if>
+		 		</td>
+		 		<td>
+		 		<if condition='$v["username"]=="admin"'>
+		 		超级管理员
+		 		<else/>
+		 			<ul>
+		 				<foreach name='v.role' item='value'>
+		 				<li>{$value.name}({$value.remark})</li>
+		 				</foreach>
+		 			</ul>
+		 				</if>
+		 		</td>
+		 		<td>
+		 			<a href="{:U('Admin/Rbac/lock',array('uid'=>$v['id']))}">锁定</a>
+		 			<a href="{:U('Admin/Rbac/outlock',array('uid'=>$v['id']))}">解除锁定</a>
+		 		</td>
+		 	</tr>
+		 </foreach>
+		
+	</table>
+</body>
+</html>

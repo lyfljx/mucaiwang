@@ -1,0 +1,15 @@
+[ 2016-05-28T14:51:49+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/add
+ERR: 非法操作:add
+
+[ 2016-05-28T14:56:59+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/add
+ERR: 非法操作:add
+
+[ 2016-05-28T14:57:37+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/add
+ERR: 非法操作:add
+
+[ 2016-05-28T14:58:22+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/Mail
+ERR: 非法操作:Mail
+
+[ 2016-05-28T14:59:03+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/addoffer
+ERR: 非法操作:addoffer
+

@@ -1,0 +1,21 @@
+[ 2016-06-19T21:33:07+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/lookUser/offer_user_id/14
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-19T21:35:31+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/lookUser/offer_user_id/14
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-19T21:37:12+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/lookUser/offer_user_id/14
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-19T21:39:12+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/lookUser/offer_user_id/14
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-19T21:43:28+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/lookUser/offer_user_id/14/offer_id/
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-19T23:55:32+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro
+ERR: 参数错误或者未定义:pro_id
+
+[ 2016-06-19T23:55:39+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro/79
+ERR: 参数错误或者未定义:pro_id
+

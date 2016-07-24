@@ -1,0 +1,36 @@
+[ 2016-05-23T00:17:02+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/listoffer
+ERR: 参数错误或者未定义:user_id
+
+[ 2016-05-23T00:17:29+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/global.css
+ERR: 非法操作:global.css
+
+[ 2016-05-23T00:17:29+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/shen-he.css
+ERR: 非法操作:shen-he.css
+
+[ 2016-05-23T01:44:51+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/listoffer
+ERR: 参数错误或者未定义:user_id
+
+[ 2016-05-23T01:45:52+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/offer_id/6
+ERR: 参数错误或者未定义:user_id
+
+[ 2016-05-23T01:47:37+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/offer_id/7
+ERR: 参数错误或者未定义:user_id
+
+[ 2016-05-23T01:56:17+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/offer_id/11
+ERR: 参数错误或者未定义:user_id
+
+[ 2016-05-23T02:00:02+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/offer_id/1
+ERR: 参数错误或者未定义:user_id
+
+[ 2016-05-23T02:01:27+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/offer_id/9
+ERR: 参数错误或者未定义:id
+
+[ 2016-05-23T02:02:36+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/offer_id/2
+ERR: 参数错误或者未定义:id
+
+[ 2016-05-23T23:28:01+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-05-23T23:28:24+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer
+ERR: 参数错误或者未定义:offer_id
+

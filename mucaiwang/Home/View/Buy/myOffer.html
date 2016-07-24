@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table  border="1px solid " cellpadding="2" cellspacing="0" >
+    <tr>
+        <td align="center">订单序号</td>
+        <td align="center">产品名字</td>
+        <td align="center">分类</td>
+        <td align="center">产品价格</td>
+        <td align="center">产品规格</td>
+        <td align="center">求购地点</td>
+        <td align="center">产品描述</td>
+        <td align="center">创建时间</td>
+        <td align="center">截止时间</td>
+        <td align="center">是否过期</td>
+ 		<td align="center">求购人</td>
+
+    </tr>
+      <foreach name="pur" item="v">
+       <tr>
+           <td align="center" bgcolor="#7fffd4">{$v.pur_id}</td>
+           <td align="center">{$v.pur_good_rname}</td>
+           <td align="center" bgcolor="#7fffd4">{$v.pur_class}</td>
+           <td align="center">{$v.pur_good_price}</td>
+           <td align="center" bgcolor="#7fffd4">{$v.pur_good_rsize}</td>
+           <td align="center" bgcolor="#7fffd4">{$v.pur_place}</td>
+           <td><textarea cols="20">{$v.pur_description}</textarea></td>
+           <td align="center" bgcolor="#7fffd4">{$v.effective_time}</td>
+           <td align="center" bgcolor="#7fffd4"><?php echo date("Y-m-d",$v["release_time"]);?></td>
+           <td align="center"> <if condition='$v["outdate"]==0'>未过期</if>
+           <if condition='$v["outdate"]==1'>已过期</if></td>
+           <td align="center" bgcolor="#7fffd4"><if condition="$v['off']==1"><a href="{:U('Home/Buy/buyer',array('uid'=>$v['pur_user_id'],'pid'=>$v['pur_id']))}">{$v.pur_user_name}</a></if></td>
+       
+           
+          </tr>
+
+    </foreach>
+    <tr>
+        <td colspan="20" style="text-align: center;">
+            {$pagelist}
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<css file='{$Think.const.ADMIN_CSS_URL}public.css'/>
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<th>表单序号</th>
+			<th>用户ID</th>
+			<th>用户名称</th>
+			<th>审核状态</th>
+			<th>表单详情</th>
+		</tr>
+		
+		 <foreach name='buy' item='v'>
+		 	<tr>
+		 		<td>{$v.pur_id}</td>
+		 		<td>{$v.pur_user_id}</td>
+		 		<td>{$v.pur_user_name}</td>
+		 		<td><if condition='$v["audit"]==0'>未审核</if>
+		 		<if condition='$v["audit"]==1'>已审核通过</if>
+		 		<if condition='$v["audit"]==2'>已审核未通过</if></td>
+		 		<td><a href="{:U('Admin/Buy/index',array('pur_id'=>$v['pur_id'],'user_id'=>$v['pur_user_id']))}">点此查看表单详情</a></td>
+		 	</tr>
+		 </foreach>
+		
+	</table>
+</body>
+</html>
+ -->

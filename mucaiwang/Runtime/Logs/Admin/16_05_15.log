@@ -1,0 +1,114 @@
+[ 2016-05-15T14:22:09+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T14:22:09+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T14:26:30+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T14:26:31+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T14:37:29+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T14:37:29+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T14:38:31+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T14:45:05+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T14:45:06+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T14:45:53+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T15:47:21+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Index/%7B%20:U('Admin/Rbac/role')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T15:49:51+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Index/%7B%20:U('Admin/Rbac/addNode')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T15:49:53+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/role.html
+ERR: 无法加载控制器:Rbac
+
+[ 2016-05-15T16:01:35+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Index/%7B%20:U('Admin/Rbac/node')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:06:28+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:06:28+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:21:46+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:21:46+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:21:51+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:21:51+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/verify')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:22:50+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/_COONTROLLER_/verify
+ERR: 非法操作:_COONTROLLER_
+
+[ 2016-05-15T20:22:52+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/_COONTROLLER_/verify
+ERR: 非法操作:_COONTROLLER_
+
+[ 2016-05-15T20:22:52+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/_COONTROLLER_/verify
+ERR: 非法操作:_COONTROLLER_
+
+[ 2016-05-15T20:24:19+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/_CONTROLLER_/verify
+ERR: 非法操作:_CONTROLLER_
+
+[ 2016-05-15T20:24:22+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/_CONTROLLER_/verify
+ERR: 非法操作:_CONTROLLER_
+
+[ 2016-05-15T20:24:22+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/_CONTROLLER_/verify
+ERR: 非法操作:_CONTROLLER_
+
+[ 2016-05-15T20:40:12+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/verify.html0.7765140333589098
+ERR: 非法操作:verify.html0.7765140333589098
+
+[ 2016-05-15T20:41:26+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/verify.html0.8098592308299252
+ERR: 非法操作:verify.html0.8098592308299252
+
+[ 2016-05-15T20:45:56+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/verify.html0.2170914686900518
+ERR: 非法操作:verify.html0.2170914686900518
+
+[ 2016-05-15T20:48:00+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/verify.html0.8787218243397894
+ERR: 非法操作:verify.html0.8787218243397894
+
+[ 2016-05-15T20:54:24+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/login')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:55:10+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/login')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:55:51+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/login')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:56:43+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/login')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:57:24+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/login')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:57:29+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/login')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T20:58:57+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/login')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-15T21:00:19+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/%7B%20:U('Admin/Login/login')%20%7D
+ERR: 非法操作:{ :U('Admin
+

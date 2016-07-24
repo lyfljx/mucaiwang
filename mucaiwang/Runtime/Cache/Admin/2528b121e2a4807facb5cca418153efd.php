@@ -1,0 +1,66 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="global.css"/>
+<link rel="stylesheet" type="text/css" href="bao-jia.css"/>
+
+</head>
+<body>
+<form method="post" action="<?php echo U('Admin/Buy/audit');?>/">
+	<table width="980" height="470" cellpadding="0" cellspacing="0">
+  		<tr>
+   			 <td width="112"><table><tr><td width="120" height="470"></td></tr></table></td>
+    		<td width="756"><table width="756" height="470" cellpadding="0" cellspacing="0"  align="center">
+       		 <tr>
+          	<td width="756" height="30" valign="middle" align="center"   class="sell-title">
+            	<span>木材报价</span>
+           	 </td>  
+       		</tr>
+       		 <tr><td valign="top" align="ceneter" class="border">
+          <table>
+     		<tr><td width="300" height="20" align="right">所需产品名称：</td><td width="300" height="20"><?php echo ($pur['pur_good_rname']); ?></td></tr>
+             <tr><td align="right">规格:</td><td><?php echo ($pur['pur_good_rsize']); ?></td></tr>
+              <tr><td align="right">数量:</td><td><?php echo ($pur['pur_good_rnumber']); ?></td></tr>
+             <tr><td align="right">价格：</td><td><?php echo ($pur['pur_good_price']); ?></td></tr>
+             <tr><td align="right">截止时间：</td><td><?php echo ($pur['effective_time']); ?></td></tr>
+             <tr><td align="right" valign="top">产品详细描述：</td><td height="40"><?php echo ($pur['pur_description']); ?></td></tr>
+             </table>
+        </td></tr>
+
+ <tr>
+          <td width="756" height="30" valign="middle" align="center"   class="sell-title">
+            <span>用户信息</span>
+            </td>  
+        </tr>
+        <tr><td valign="top" align="ceneter" class="border">
+          <table>
+             <tr><td width="300" height="20" align="right">用户序号：</td><td width="300" height="20"><?php echo ($user['user_id']); ?></td></tr>
+             <tr><td align="right">用户名:</td><td><?php echo ($user['user_name']); ?></td></tr>
+             <tr><td align="right">电子邮箱：</td><td><?php echo ($user['user_email']); ?></td></tr>
+             <tr><td align="right">真实姓名：</td><td><?php echo ($user['user_true_name']); ?></td></tr>
+             <tr><td align="right">职位：</td><td><?php echo ($user['user_job']); ?></td></tr>
+             <tr><td align="right">手机：</td><td><?php echo ($user['user_phone']); ?></td></tr>
+             <tr><td align="right">电话：</td><td><?php echo ($user['user_fixed_phone']); ?></td></tr>
+             <tr><td align="right">传真：</td><td><?php echo ($user['portraiture']); ?></td></tr>
+             	
+             </table>
+        </td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+</div>
+<input type="submit" value='通过审核' />
+<input type="hidden" name="pur_id" value='<?php echo ($pur["pur_id"]); ?>'/>
+</form>
+</body>
+</html>

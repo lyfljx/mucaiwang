@@ -1,0 +1,7 @@
+[ 2016-06-06T17:51:23+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/User/test.js
+ERR: 非法操作:test.js
+
+[ 2016-06-06T20:43:36+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy_order.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '('home_id') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_offer` WHERE ( offer_user_id=session('home_id') ) 
+

@@ -1,0 +1,50 @@
+*{
+   font-family:'宋体';
+}
+ul li{
+    background:#DDD;
+    text-decoration:none;
+}
+a:link,a:visited,a:active{
+	color:#333;
+	text-decoration: none;
+}
+a:hover{
+	color:purple;
+	text-decoration:underline;
+}
+td{
+	padding-top:4px;     
+}
+img{
+	border: none;
+}
+td{
+	font-size:14px;   
+}
+/*box*/   
+.title-bg{
+	background:url(../img/head_bg.png) repeat-x;
+}
+.title-bg td{
+	font-size:12px;
+}
+.sell-title{
+	font-size:15px;
+	color:#073f26;
+	border-bottom:1px solid #bfbcbf;
+}
+.td-down{
+   padding-left:10px;
+}
+.big{
+	width:200px;
+	height:80px;
+}
+.size{
+	width:150px;
+	height:20px;
+}
+.border{
+    border:1px solid #bfbcbf;
+}

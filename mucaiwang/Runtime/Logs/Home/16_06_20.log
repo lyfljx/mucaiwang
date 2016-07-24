@@ -1,0 +1,114 @@
+[ 2016-06-20T00:04:36+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro/pro_id/79
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-20T00:04:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro/pro_id/79
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-20T00:07:53+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro/pro_id/79
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_pro` WHERE ( pro_id=79} ) LIMIT 1  
+
+[ 2016-06-20T00:11:04+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro/79
+ERR: 参数错误或者未定义:pro_id
+
+[ 2016-06-20T00:11:05+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro
+ERR: 参数错误或者未定义:pro_id
+
+[ 2016-06-20T00:11:15+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro
+ERR: 参数错误或者未定义:pro_id
+
+[ 2016-06-20T00:11:17+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro/79
+ERR: 参数错误或者未定义:pro_id
+
+[ 2016-06-20T00:11:22+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro/79
+ERR: 参数错误或者未定义:pro_id
+
+[ 2016-06-20T12:02:46+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offerlist/offer_user_id/14
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-20T12:51:50+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/showPro/offer_id/14
+ERR: 非法操作:showPro
+
+[ 2016-06-20T12:52:01+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showPro/offer_id/14
+ERR: 参数错误或者未定义:pro_id
+
+[ 2016-06-20T17:14:27+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/tianjia
+ERR: 1048:Column 'pro_class_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `mucai_pro` (`pro_create_time`,`com_id`,`pro_name`,`pro_style`,`pro_unitprice`,`pro_grow_area`,`pro_cut_time`,`pro_desc`,`pro_albumpath`,`pro_salbumpath`,`pro_user_id`,`pro_local_area`,`pro_class_id`,`pro_pclass_id`) VALUES ('1466413987','9','fddf地方官方答复','梵蒂冈的','的方式发送方式','对方师傅的说法','1474473600','','Admin/Public/Uploadss/2016-06-20/5767b3ee68a9d.jpg','Admin/Public/Uploadss/2016-06-20/small5767b3ee68a9d.jpg','14','',NULL,'3')
+
+[ 2016-06-20T17:18:02+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/tianjia
+ERR: 1048:Column 'pro_pclass_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `mucai_pro` (`pro_create_time`,`com_id`,`pro_name`,`pro_style`,`pro_unitprice`,`pro_grow_area`,`pro_pclass_id`,`pro_class_id`,`pro_cut_time`,`pro_desc`,`pro_albumpath`,`pro_salbumpath`,`pro_user_id`,`pro_local_area`) VALUES ('1466414252','9','梵蒂冈的方法','多岁的发生的','说得对三大','的萨达',NULL,NULL,'1471449600','vcxvcxvcxvcvxc','Admin/Public/Uploadss/2016-06-20/5767b4c5ef968.jpg','Admin/Public/Uploadss/2016-06-20/small5767b4c5ef968.jpg','14','46')
+
+[ 2016-06-20T17:24:23+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/tianjia
+ERR: 1048:Column 'pro_class_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `mucai_pro` (`pro_create_time`,`com_id`,`pro_name`,`pro_style`,`pro_unitprice`,`pro_grow_area`,`pro_cut_time`,`pro_desc`,`pro_user_id`,`pro_local_area`,`pro_class_id`,`pro_pclass_id`) VALUES ('1466413897','10','东风顺副食','','','','1466697600','','15','',NULL,'3')
+
+[ 2016-06-20T19:35:55+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T19:39:35+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T19:48:41+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and success < 2  )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id=  and success < 2  ) 
+
+[ 2016-06-20T19:52:15+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success < 2  )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success < 2  ) 
+
+[ 2016-06-20T19:53:13+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success < 2  )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success < 2  ) 
+
+[ 2016-06-20T19:56:29+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2  )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2  ) 
+
+[ 2016-06-20T20:00:41+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T20:15:08+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T20:17:02+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T20:17:36+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T20:24:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T20:28:25+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T20:34:20+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T20:37:05+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T20:39:08+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T20:42:29+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+
+[ 2016-06-20T20:42:49+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buyer/pid/15.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND success<2 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_buy_register_user` WHERE ( register_id= AND success<2 ) 
+

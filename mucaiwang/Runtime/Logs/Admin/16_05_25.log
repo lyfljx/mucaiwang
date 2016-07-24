@@ -1,0 +1,6 @@
+[ 2016-05-25T22:09:53+08:00 ] 127.0.0.1 /mucaiwang//index.php/Admin/Offer/offerlist.html
+ERR: 无法加载控制器:Offer
+
+[ 2016-05-25T23:37:49+08:00 ] 127.0.0.1 /mucaiwang//index.php/Admin/Offer/offerlist.html
+ERR: 非法操作:offerlist
+

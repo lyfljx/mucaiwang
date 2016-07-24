@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h5>>>>我的求购</h5>-->
+<!--<div><a href="__CONTROLLER__/offerlist/offer_user_id/{$Think.session.home_id}"><h4>返回</h4></a></div>-->
+<table width="100%" border="1px dashed" cellpadding="2" cellspacing="0">
+    <tr>
+        <td align="center">订单序号</td>
+        <td align="center">产品名字</td>
+        <td align="center">分类</td>
+        <td align="center">分类</td>
+        <td align="center">产品价格</td>
+        <td align="center">产品规格</td>
+        <td align="center">报价人</td>
+        <!--<td align="center">求购人</td>-->
+        <td align="center">产品描述</td>
+        <td align="center">创建时间</td>
+        <td align="center">截止时间</td>
+        <!--<td align="center">审核状态</td>-->
+        <td align="center">是否过期</td>
+
+        <!--<td colspan="1" align="center">操作</td>-->
+        <!--<td align="center">查看记录</td>-->
+
+    </tr>
+    <foreach name="offerInfo" item="v">
+        <!--//整数之间的比较，时间戳就是一个int类型整数-->
+        <foreach name="classinfo" item="vv">
+            <if condition="$v['offer_id'] eq $vv['offer_id']">
+
+                <tr>
+                    <td align="center" bgcolor="#7fffd4">{$v.offer_id}</td>
+                    <td align="center">{$v.offer_pro_name}</td>
+                    <td align="center" bgcolor="#7fffd4">{$vv.pro_pclass}</td>
+                    <td align="center" bgcolor="#7fffd4">{$vv.pro_class}</td>
+                    <td align="center">{$v.offer_price}</td>
+                    <td align="center" bgcolor="#7fffd4">{$v.offer_p_size}</td>
+
+                    <td align="center">
+                        <if condition="$email[$v['offer_id']] eq 1">
+
+                            <a href="__CONTROLLER__/lookUser/offer_user_id/{$v.offer_user_id}/offer_id/{$v.offer_id}">{$v.user_name}</a>
+
+                            <elseif condition="$email[$v['offer_id']] eq 2"/>
+                            未审核
+
+                            <else/>
+                            未审核
+                        </if>
+                    </td>
+                    <!--<td align="center"><a href="__CONTROLLER__/buyList/offer_id/{$v.offer_id}">查看</a></td>-->
+                    <!--<td align="center"><textarea cols="20">{$v.offer_description}</textarea></td>-->
+
+                    <td align="center">
+                        <if condition="$v['offer_description'] neq null">
+                            <a href="{:U('offerDesc',array(offer_id => $v['offer_id']))}">查看</a>
+
+                            <else/>
+
+                            暂无
+
+                        </if>
+
+                    </td>
+                    <td align="center" bgcolor="#7fffd4"><?php echo date("Y-m-d",$v["offer_create_time"]);?></td>
+                    <td align="center"><?php echo date('Y-m-d',$v['offer_cut_time']);?></td>
+                    <!--<td align="center">{$v.offer_check}</td>-->
+                    <!--<td align="center">-->
+                        <!--<if condition='$v["offer_check"]==0'>未审核</if>-->
+                        <!--<if condition='$v["offer_check"]==1'>已审核通过</if>-->
+                        <!--<if condition='$v["offer_check"]==2'>已审核未通过</if>-->
+                    <!--</td>-->
+                    <td align="center">
+
+                        <if condition="  NOW_TIME  lt  $v['offer_cut_time']">未过期</if>
+                        <if condition="  NOW_TIME  gt  $v['offer_cut_time']">已过期</if>
+                        <!--<if condition='$v["offer_status"] eq  1 '>未过期</if>-->
+                        <!--<if condition='$v["offer_status"] eq  0 '>已过期</if>-->
+                        <!--<?php if($v['offer_cut_time'] < NOW_TIME ){ echo 1; }else{echo 1;}?>-->
+                    </td>
+                    <!--<td align="center">&nbsp;<a href="__CONTROLLER__/alterOffer/offer_id/{$v.offer_id}">修改</a>&nbsp;&nbsp;</td>-->
+
+                </tr>
+            </if>
+        </foreach>
+    </foreach>
+
+    <tr>
+        <td colspan="20" style="text-align: center;">
+            {$pagelist}
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

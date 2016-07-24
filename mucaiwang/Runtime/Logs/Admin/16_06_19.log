@@ -1,0 +1,9 @@
+[ 2016-06-19T13:37:49+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/showDesc/buyer_id/14
+ERR: 参数错误或者未定义:user_id
+
+[ 2016-06-19T13:38:14+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/showDesc/buyer_id/14
+ERR: 参数错误或者未定义:user_id
+
+[ 2016-06-19T21:27:07+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/showDesc/buyer_id/14
+ERR: 参数错误或者未定义:user_id
+

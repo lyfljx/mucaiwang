@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table  border="1px solid " cellpadding="2" cellspacing="0" >
+    <tr>
+        <td align="center">订单序号</td>
+        <td align="center">产品名字</td>
+        <td align="center">父分类</td>
+        <td align="center">子分类</td>
+        <td align="center">产品价格</td>
+        <td align="center">产品规格</td>
+        <td align="center">求购地点</td>
+        <td align="center">求购用户</td>
+        <td align="center">报价人</td>
+        <td align="center">产品描述</td>
+        <td align="center">创建时间</td>
+        <td align="center">截止时间</td>
+        <td align="center">是否过期</td>
+
+    </tr>
+      <foreach name="buy" item="v">
+       <tr>
+           <td align="center" bgcolor="#7fffd4">{$v.pur_id}</td>
+           <td align="center">{$v.pur_good_rname}</td>
+           <td align="center" bgcolor="#7fffd4">{$v.pclass}</td>
+           <td align="center" bgcolor="#7fffd4">{$v.class}</td>
+           <td align="center">{$v.pur_good_price}</td>
+           <td align="center" bgcolor="#7fffd4">{$v.pur_good_rsize}</td>
+           <td align="center" bgcolor="#7fffd4">{$v.province}{$v.city}</td>
+           <td align="center"><a href="{:U('Admin/Buy/buyUser',array('uid'=>$v['pur_user_id']))}">{$v.pur_user_name}</a></td>
+           <td align="center"><a href="{:U('Admin/Buy/offer',array('pid'=>$v['pur_id']))}"><if condition="$v['off2']==1">查看</if><if condition="$v['off2']==2">有新的报价人</if></a></td>
+           <td><textarea cols="20">{$v.pur_description}</textarea></td>
+           <td align="center" bgcolor="#7fffd4"><?php echo date("Y-m-d",$v["release_time"]);?></td>
+           <td align="center">{$v.effective_time}</td>
+           <td align="center"> <if condition='$v["outdate"]==0'>未过期</if>
+           <if condition='$v["outdate"]==1'>已过期</if></td>
+          </tr>
+
+    </foreach>
+    <tr>
+        <td colspan="20" style="text-align: center;">
+            {$pagelist}
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

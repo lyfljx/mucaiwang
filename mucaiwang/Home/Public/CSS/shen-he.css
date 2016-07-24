@@ -1,0 +1,44 @@
+*{
+   font-family:'宋体';
+}
+ul li{
+    background:#DDD;
+    text-decoration:none;
+}
+a:link,a:visited,a:active{
+	color:#333;
+	text-decoration: none;
+}
+a:hover{
+	color:purple;
+	text-decoration:underline;
+}
+td{
+	padding-top:4px;
+}
+img{
+	border: none;
+}
+td{
+	font-size:13px;
+}
+/*box*/   
+.title-bg{
+	background:url(../img/head_bg.png) repeat-x;
+}
+.main{
+	
+	border:1px solid #bfbcbf;
+}
+.sell-title{
+	font-size: 15px;
+	color:#073f26;
+	border-bottom:1px solid #bfbcbf;
+}
+.m-form{
+	width:280px;
+	height:60px;
+}
+.space{
+	padding-left:15px;
+}

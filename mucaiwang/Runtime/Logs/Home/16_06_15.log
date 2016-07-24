@@ -1,0 +1,10 @@
+[ 2016-06-15T20:12:48+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/showDesc/buyer_id/19
+ERR: 非法操作:showDesc
+
+[ 2016-06-15T20:16:16+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/showDesc/buyer_id/19
+ERR: 非法操作:showDesc
+
+[ 2016-06-15T22:10:37+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offerlist/offer_user_id/14
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2 AND offer_user_id = '14' order by offer_create_time desc Limit 0, 10' at line 1
+ [ SQL语句 ] : select * from mucai_offer  WHERE offer_check= 1,2 AND offer_user_id = '14' order by offer_create_time desc Limit 0, 10
+

@@ -1,0 +1,56 @@
+[ 2016-05-16T00:35:44+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-16T00:45:37+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Index/%7B%20:U('Admin/News/release')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-16T15:25:38+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/node.html
+ERR: 1146:La table 'mucaiwang.mucai_node' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_node`
+
+[ 2016-05-16T15:59:57+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/company.html
+ERR: 非法操作:company
+
+[ 2016-05-16T16:00:20+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/company.html
+ERR: 非法操作:company
+
+[ 2016-05-16T16:57:02+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/company.html
+ERR: 非法操作:company
+
+[ 2016-05-16T16:57:03+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Index/%7B%20:U('Admin/News/release')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-16T16:57:05+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Index/%7B%20:U('Admin/News/newList')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2016-05-16T16:57:06+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/company.html
+ERR: 非法操作:company
+
+[ 2016-05-16T17:53:44+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/company.html
+ERR: 非法操作:company
+
+[ 2016-05-16T20:38:11+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/login.html
+ERR: 1146:La table 'mucai.mucai_manage' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_manage`
+
+[ 2016-05-16T20:39:05+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/login.html
+ERR: 1146:La table 'mucai.mucai_manage' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_manage`
+
+[ 2016-05-16T20:41:33+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: 1146:La table 'mucai.mucai_user_relation' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_user_relation`
+
+[ 2016-05-16T20:44:45+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-16T20:51:38+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `mucai_role` WHERE (  ) 
+
+[ 2016-05-16T20:58:57+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-16T21:02:19+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+

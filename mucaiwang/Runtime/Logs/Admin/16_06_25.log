@@ -1,0 +1,11 @@
+[ 2016-06-25T12:22:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/showCom/com_id/3
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-25T23:02:34+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Buy/buyList.html
+ERR: 1054:Champ 'buy_id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `mucai_buy` WHERE ( buy_id =1 ) LIMIT 1  
+
+[ 2016-06-25T23:03:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Buy/buyList.html
+ERR: 1054:Champ 'offer_id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `mucai_buy` WHERE ( offer_id =1 ) LIMIT 1  
+

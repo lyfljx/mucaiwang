@@ -1,0 +1,155 @@
+*{
+   font-family:'宋体';
+}
+ul li{
+    background:#DDD;
+    text-decoration:none;
+}
+a:link,a:visited,a:active{
+	color:#333;
+	text-decoration: none;
+}
+a:hover{
+	color:purple;
+	text-decoration:underline;
+}
+td{
+	padding-top:4px;
+}
+img{
+	border: none;
+}
+
+/*box*/
+#box{
+	font-size:12px;
+	width:980px;
+	height:660px;
+	position:relative;
+	border:1px solid #eeebeb;
+}
+#box .title-bg{
+	background:url(image/head_bg.png) repeat-x;
+}
+#box #mu-title{
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:2px solid #f3f1f1;
+}
+#box #pic-introduce{
+	position:absolute;
+	top:110px;
+	left:335px;
+}
+#box #pic-introduce td{
+	width:98px;
+	height:25px;
+	color:13px;
+}
+#box #pic-introduce .leth{
+	width:160px;
+}
+#box .pic-width{
+	width:255px;
+	height:195px;
+	border:1px solid #dddada;
+}
+*{
+   font-family:'宋体';
+}
+ul li{
+    background:#DDD;
+    text-decoration:none;
+}
+a:link,a:visited,a:active{
+	color:#333;
+	text-decoration: none;
+}
+a:hover{
+	color:purple;
+	text-decoration:underline;
+}
+td{
+	padding-top:4px;
+}
+img{
+	border: none;
+}
+
+/*box*/
+#box{
+	font-size:12px;
+	width:980px;
+	height:660px;
+	position:relative;
+	border:1px solid #eeebeb;
+}
+#box .title-bg{
+	background:url(image/head_bg.png) repeat-x;
+}
+#box #mu-title{
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:2px solid #f3f1f1;
+}
+#box #pic-introduce{
+	position:absolute;
+	top:110px;
+	left:335px;
+}
+#box #pic-introduce td{
+	width:98px;
+	height:25px;
+	color:13px;
+}
+#box #pic-introduce .leth{
+	width:160px;
+}
+#box .pic-width{
+	width:255px;
+	height:195px;
+	border:1px solid #dddada;
+}
+#box #reg-form{
+	width:310px;
+	height:122px; 
+	font-weight:bold;            
+    border:1px solid #dddada;
+	position:absolute;
+	top:45px;
+	right:0;
+}
+#box .re-td{
+	width:100px;
+}
+#box .phone{
+	color:red;
+}
+#box .re-submit{
+	width:80px;
+	font-size:15px;
+}
+#box .down-title{
+	font-size:15px;
+	font-weight:bold;
+}
+#box #reg-form{
+	width:310px;
+	height:122px; 
+	font-weight:bold;            
+    border:1px solid #dddada;
+	position:absolute;
+	top:45px;
+	right:0;
+}
+#box .re-td{
+	width:100px;
+}
+#box .re-submit{
+	width:80px;
+	font-size:15px;
+}
+#box .down-title{
+	font-size:15px;
+	font-weight:bold;
+}

@@ -1,0 +1,44 @@
+[ 2016-06-01T00:34:58+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Home/Pro/image/pro_id/48
+ERR: 无法加载控制器:Home
+
+[ 2016-06-01T17:34:50+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/a
+ERR: 非法操作:a
+
+[ 2016-06-01T17:34:56+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showlist
+ERR: 参数错误或者未定义:pro_user_id
+
+[ 2016-06-01T18:22:05+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showlist
+ERR: 参数错误或者未定义:pro_user_id
+
+[ 2016-06-01T18:24:39+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showlist
+ERR: 参数错误或者未定义:pro_user_id
+
+[ 2016-06-01T18:29:52+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/tiajia
+ERR: 非法操作:tiajia
+
+[ 2016-06-01T18:36:18+08:00 ] 127.0.0.1 /mucaiwang/index.php/Pro/showlist.html
+ERR: 参数错误或者未定义:pro_user_id
+
+[ 2016-06-01T18:38:19+08:00 ] 127.0.0.1 /mucaiwang/index.php/showlist/pro_user_id/%7B$Think.session.home_id%7D.html
+ERR: 无法加载控制器:Showlist
+
+[ 2016-06-01T18:41:22+08:00 ] 127.0.0.1 /mucaiwang/index.php/Pro/showlist/0/pro_user_id%3D%3E%27session%28home_id%29.html
+ERR: 参数错误或者未定义:pro_user_id
+
+[ 2016-06-01T18:42:46+08:00 ] 127.0.0.1 /mucaiwang/index.php/Pro/showlist/0/pro_user_id%3D%3Esession%28%27home_id%27%29.html
+ERR: 参数错误或者未定义:pro_user_id
+
+[ 2016-06-01T18:44:03+08:00 ] 127.0.0.1 /mucaiwang/index.php/Pro/showlist.html
+ERR: 参数错误或者未定义:pro_user_id
+
+[ 2016-06-01T19:56:46+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showlist
+ERR: 参数错误或者未定义:pro_user_id
+
+[ 2016-06-01T20:16:46+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showlist/pro_user_id/19
+ERR: 1054:Unknown column 'pro_pclass' in 'field list'
+ [ SQL语句 ] : SELECT `pro_pclass` FROM `mucai_pro_class` WHERE ( pro_pclass=3 ) LIMIT 1  
+
+[ 2016-06-01T20:37:05+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showlist/pro_user_id/19
+ERR: 1054:Unknown column 'pro_user_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mucai_pro_pclass` WHERE ( pro_user_id=19 ) 
+

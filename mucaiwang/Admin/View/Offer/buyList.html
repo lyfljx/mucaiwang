@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><a href="__CONTROLLER__/looklist"><h4>返回</h4></a></div>
+<foreach name="buyinfo" item="vv" key="kk">
+
+    <form>
+        <fieldset>
+            <legend><strong>{$vv.user_name}</strong></legend>
+            <table width="60%" border="1px dashed" cellpadding="1" cellspacing="0" style="line-height: 20px">
+
+                <!--这是一个四维数组-->
+                <tr>
+                    <td align="center">求购人</td>
+                    <td align="center">{$vv.user_name}</td>
+                </tr>
+                <tr>
+                    <td align="center">公司名称</td>
+
+                    <td align="center" bgcolor="#7fffd4"><a
+                            href="__CONTROLLER__/showCom/com_id/{$vv.com_id}">{$vv.com_name}</a></td>
+
+                </tr>
+                <tr>
+                    <td align="center">邮箱</td>
+                    <td align="center">{$vv.user_email}</td>
+                </tr>
+                <tr>
+                    <td align="center">求购人</td>
+                    <td align="center" bgcolor="#7fffd4">{$vv.user_true_name}</td>
+                </tr>
+                <tr>
+                    <td align="center">职位</td>
+                    <td align="center">{$vv.user_job}</td>
+                </tr>
+                <tr>
+                    <td align="center">电话</td>
+                    <td align="center" bgcolor="#7fffd4">{$vv.user_phone}</td>
+                </tr>
+                <tr>
+                    <td align="center">邮件状态</td>
+                    <foreach name="offerinfo" item="v">
+                        <if condition="$v['buyer_id'] eq $vv['user_id']">
+                            <td align="center">
+
+                                <if condition="$v['email'] eq 0">未发邮件
+
+                                    <elseif condition="$v['email'] eq 2"/>
+                                    未通过
+
+                                    <else/>
+                                    已发邮件
+                                </if>
+                                <!--<if condition="$v['email'] neq 1">未发邮件</if>-->
+
+                            </td>
+                        </if>
+                    </foreach>
+                </tr>
+                <tr>
+                    <td align="center">QQ</td>
+                    <td align="center">{$vv.user_qq}</td>
+                </tr>
+                <tr>
+                    <td align="center">固定电话</td>
+                    <td align="center" bgcolor="#7fffd4">{$vv.user_fixed_phone}</td>
+                </tr>
+                <tr>
+                    <td align="center">报价：</td>
+                    <td align="center">
+                        <if condition="$vv['price'] neq null">{$vv.price}
+                            <else/>
+
+                            暂无
+
+                        </if>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">成功率：</td>
+                    <td align="center">
+                        <if condition="$vv['rate'] gt 0">{$vv.rate}%
+
+                            <else/>
+                            暂无
+
+                        </if>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">信誉度：</td>
+                    <td align="center">
+                        <if condition="$vv['credit'] gt 0">{$vv.credit}%
+
+                            <else/>
+                            暂无
+
+                        </if>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td align="center">平均分：</td>
+                    <td align="center">
+                        <if condition="$vv['avg'] gt 0">{$vv.avg}
+
+                            <else/>
+                            暂无
+                        </if>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">操作</td>
+                    <td align="center">
+
+                        <a
+                                href="__CONTROLLER__/sendMailer/offer_id/{$offer_id}/buyer_id/{$vv.user_id}/status/1">发送邮件</a>
+                        <a
+                                href="__CONTROLLER__/sendMailer/offer_id/{$offer_id}/buyer_id/{$vv.user_id}/status/0">未通过</a>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">评论：</td>
+                    <!--<td align="center"><a href="__CONTROLLER__/showDesc/buyer_id/{$v.buyer_id}">查看评论</a></td>-->
+                    <td align="center"><a href="__CONTROLLER__/showDesc/user_id/{$v.buyer_id}">查看评论</a></td>
+
+                </tr>
+
+
+                <!--<tr>-->
+                <!--<td colspan="20" style="text-align: center;">-->
+                <!--{$pagelist}-->
+                <!--</td>-->
+                <!--</tr>-->
+                <div style="display: inline;float: right;width: 38%; height:267px;border: 1px solid beige">
+
+                </div>
+            </table>
+        </fieldset>
+    </form>
+
+    <!--<td align="center"></td>-->
+    <!--<td align="center" bgcolor="#7fffd4"><a href="__MODULE__/Com_desc/desc/offer_id/{$offer_id}">查看评价</a></td>-->
+    <!--</tr>-->
+</foreach>
+</body>
+</html>

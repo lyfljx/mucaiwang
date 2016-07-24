@@ -1,0 +1,44 @@
+[ 2016-06-12T01:37:07+08:00 ] 127.0.0.1 /mucaiwang/index.php/Pro/showlist/array('pro_user_id_'/%3E+session%28%27home_id%27%29.html
+ERR: 参数错误或者未定义:pro_user_id
+
+[ 2016-06-12T12:19:02+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/kindeditor.js
+ERR: 无法加载控制器:Kindeditor.js
+
+[ 2016-06-12T12:19:02+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/themes/default/default.css
+ERR: 无法加载控制器:Themes
+
+[ 2016-06-12T12:19:02+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/lang/zh_CN.js
+ERR: 无法加载控制器:Lang
+
+[ 2016-06-12T12:19:21+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/themes/default/default.css
+ERR: 无法加载控制器:Themes
+
+[ 2016-06-12T12:19:21+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/kindeditor.js
+ERR: 无法加载控制器:Kindeditor.js
+
+[ 2016-06-12T12:19:21+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/lang/zh_CN.js
+ERR: 无法加载控制器:Lang
+
+[ 2016-06-12T12:19:21+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/lang/zh_CN.js
+ERR: 无法加载控制器:Lang
+
+[ 2016-06-12T12:25:54+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offer_order.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_register_user` WHERE ( user_id= ) LIMIT 1  
+
+[ 2016-06-12T12:26:12+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offer_order.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mucai_register_user` WHERE ( user_id= ) LIMIT 1  
+
+[ 2016-06-12T12:30:07+08:00 ] 127.0.0.1 /mucaiwang/index.php/Index/login.html
+ERR: 非法操作:login
+
+[ 2016-06-12T12:30:28+08:00 ] 127.0.0.1 /mucaiwang/index.php/Index/login.html
+ERR: 非法操作:login
+
+[ 2016-06-12T12:30:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Index/Offer/offer_order
+ERR: 非法操作:Offer
+
+[ 2016-06-12T17:15:14+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+

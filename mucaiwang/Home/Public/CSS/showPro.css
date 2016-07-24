@@ -1,0 +1,135 @@
+*{
+   font-family:'宋体'  HELVETICA;
+}
+ul li{
+    list-style-type:none;
+}
+a:link,a:visited,a:active{
+	color:#333;
+	text-decoration: none;
+}
+a:hover{
+	color:purple;
+	text-decoration:underline;
+}
+td{
+	padding-top:4px;      
+}
+img{
+	border: none;
+}
+.nav-top{
+	color:#666666;
+	display:block;
+	margin: 5px 0 5px 840px;
+}
+.nav{
+	width:980px;                           
+	margin:5px auto 0 auto;
+	font-size:13px;
+}
+.nav ul{
+	display:inline;
+}
+.nav ul li{
+	display:inline-block;
+	width:90px;
+	height:45px;                     
+    float:right;
+    background:#9cbe3f;
+}
+.nav ul li a{
+	color:white;
+	font-weight:bold;
+	display:block;
+	width:90px;                  
+	height:45px;
+	line-height:45px;
+	text-align:center;
+
+}
+.nav ul li a:hover{
+	color:green;
+}
+.nav-pic{
+	width:980px;
+	height:285px;
+	background: url(../IMG/2_1.jpg) no-repeat;
+	position:relative;
+}
+.nav-pic a{
+	font-size:25px;
+	position:absolute;
+	top:60px;
+	right:200px;
+}
+.content{
+	width:980px; 
+	margin:2px auto 0 auto;      
+	position:relative;
+}
+.left{
+	width:197px;
+	height:720px;       
+}
+.right{
+	width:715px;
+	font-size:13px;
+    position:absolute;                
+    top:0;
+    right:50px;
+}
+.right td{
+	line-height: 23px;           
+}
+.tab-title{
+	color:#546208;
+	font-weight:bold;
+	text-align:center;
+	background: url(../IMG/top4.jpg) no-repeat 0 3px;
+}
+.right table{
+	font-size:12px;
+	color:#333333;
+}
+.price{
+	width:280px; 
+	height:60px;
+	text-align:center;
+	border:1px solid #FFCC33;
+	background-color:#e5f3a8;
+    margin:5px 0px;
+    padding:3px 10px 0px 10px;
+    color:#333333;
+}
+.introducing{
+	color:#585757;
+	font-size:12px;
+	width:715px;
+	height:300px;           
+}
+.intro-title{
+	color:#424141;
+	font-weight:bold;
+	height:26px;
+	line-height:25px;
+	padding-left: 20px;
+	background:url(../IMG/top3.jpg) no-repeat;
+}
+.foot{
+	height:80px; 
+	background:url(../IMG/2_25.gif) repeat-x;
+	position:relative;
+}
+.foot-pic{
+	position:absolute;
+	top:20px;
+    left:200px;
+}
+.foot-list{
+	font-size:12px;
+	color:#424141;
+	position:absolute;
+	top:26px;
+    left:450px;
+}

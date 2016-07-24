@@ -1,0 +1,62 @@
+[ 2016-06-07T10:33:23+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offer_user_id/19
+ERR: 非法操作:offer_user_id
+
+[ 2016-06-07T10:34:33+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offer_user_id/19
+ERR: 非法操作:offer_user_id
+
+[ 2016-06-07T10:53:25+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/showCom/com_id/
+ERR: 参数错误或者未定义:com_id
+
+[ 2016-06-07T10:54:40+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-06-07T12:24:53+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy_order.html
+ERR: 1054:Unknown column 'buyer_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mucai_offer` WHERE ( buyer_id = 14 ) 
+
+[ 2016-06-07T16:28:31+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/js/jquery.ganged.js
+ERR: 非法操作:js
+
+[ 2016-06-07T16:28:32+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/js/jquery.js
+ERR: 非法操作:js
+
+[ 2016-06-07T16:28:32+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/js/jquery.inputbox.js
+ERR: 非法操作:js
+
+[ 2016-06-07T16:28:32+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/jquery.inputbox.css
+ERR: 非法操作:jquery.inputbox.css
+
+[ 2016-06-07T16:28:32+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/js/jquery.inputbox.js
+ERR: 非法操作:js
+
+[ 2016-06-07T16:28:33+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/js/jquery.ganged.js
+ERR: 非法操作:js
+
+[ 2016-06-07T16:28:33+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/jquery.inputbox.css
+ERR: 非法操作:jquery.inputbox.css
+
+[ 2016-06-07T16:31:20+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/jquery.inputbox.css
+ERR: 非法操作:jquery.inputbox.css
+
+[ 2016-06-07T16:31:22+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/jquery.inputbox.css
+ERR: 非法操作:jquery.inputbox.css
+
+[ 2016-06-07T16:33:47+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/jquery.inputbox.css
+ERR: 非法操作:jquery.inputbox.css
+
+[ 2016-06-07T16:33:48+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/jquery.inputbox.css
+ERR: 非法操作:jquery.inputbox.css
+
+[ 2016-06-07T16:34:17+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/jquery.inputbox.css
+ERR: 非法操作:jquery.inputbox.css
+
+[ 2016-06-07T16:34:19+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/jquery.inputbox.css
+ERR: 非法操作:jquery.inputbox.css
+
+[ 2016-06-07T16:36:06+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/jquery.inputbox.css
+ERR: 非法操作:jquery.inputbox.css
+
+[ 2016-06-07T16:52:17+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/User/register
+ERR: 1146:Table 'mucai.mucai_com_owned_market' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_com_owned_market`
+

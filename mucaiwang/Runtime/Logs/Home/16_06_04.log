@@ -1,0 +1,50 @@
+[ 2016-06-04T16:06:45+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy_order/offer_id/9.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-04T16:38:06+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy_order/offer_id/9.html
+ERR: 1054:Unknown column 'a.order_id' in 'where clause'
+ [ SQL语句 ] : SELECT b.* FROM mucai_offer_buy AS a, mucai_offer AS b WHERE a.offer_id = b.offer_id AND a. order_id='3'
+
+[ 2016-06-04T17:12:37+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy_order/offer_id/7.html
+ERR: 1054:Unknown column 'a.offer_user_id' in 'where clause'
+ [ SQL语句 ] : SELECT b.* FROM mucai_offer_buy AS a, mucai_offer AS b WHERE a.offer_id = b.offer_id AND a. offer_user_id='3'
+
+[ 2016-06-04T17:15:37+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Buy/buy_order/offer_id/7.html
+ERR: 1054:Unknown column 'a.offer_user_id' in 'where clause'
+ [ SQL语句 ] : SELECT b.* FROM mucai_offer_buy AS a, mucai_offer AS b WHERE a.offer_id = b.offer_id AND a. offer_user_id='3'
+
+[ 2016-06-04T20:36:16+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/offer/buy_offer
+ERR: 非法操作:buy_offer
+
+[ 2016-06-04T20:41:43+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/offer/buy_order
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-04T20:42:14+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/offer/buy_order
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-04T21:37:52+08:00 ] 127.0.0.1 /mucaiwang//index.php/Offer/offer.html
+ERR: 非法操作:offer
+
+[ 2016-06-04T21:38:19+08:00 ] 127.0.0.1 /mucaiwang//index.php/Offer/offer.html
+ERR: 非法操作:offer
+
+[ 2016-06-04T21:39:21+08:00 ] 127.0.0.1 /mucaiwang//index.php/Offer/offer.html
+ERR: 非法操作:offer
+
+[ 2016-06-04T21:39:28+08:00 ] 127.0.0.1 /mucaiwang/index.php/Offer/offer.html
+ERR: 非法操作:offer
+
+[ 2016-06-04T21:39:31+08:00 ] 127.0.0.1 /mucaiwang/index.php/Offer/offer.html
+ERR: 非法操作:offer
+
+[ 2016-06-04T22:38:38+08:00 ] 127.0.0.1 /mucaiwang/index.php/Offer/Buy/buy_order.html
+ERR: 模板不存在:E:/web/php99/mucaiwang/Home/View/Offer/Buy.html
+
+[ 2016-06-04T22:39:29+08:00 ] 127.0.0.1 /mucaiwang/index.php/Buy/buy_order.html
+ERR: 1146:Table 'mucai.mucai_offer_buy_order' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_offer_buy_order`
+
+[ 2016-06-04T22:39:42+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buy_order.html
+ERR: 1146:Table 'mucai.mucai_offer_buy_order' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_offer_buy_order`
+

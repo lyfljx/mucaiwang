@@ -1,0 +1,12 @@
+[ 2016-06-21T09:49:43+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showlist.pro_user_id/19
+ERR: 非法操作:showlist.pro_user_id
+
+[ 2016-06-21T14:46:28+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showlist/pro_user_id/19
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-21T14:46:33+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showlist/pro_user_id/19
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-21T14:46:51+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/showlist/pro_user_id/19
+ERR: Think\Model:relation方法不存在！
+

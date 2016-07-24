@@ -1,0 +1,99 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0 auto;
+	width:980px;
+	height:1000px;
+	background-color:white;
+}
+/*顶部开始*/
+#header{
+	width:980px;
+	height:200px;
+    background:url(../img/12334475686.png) no-repeat;
+}
+#search{
+	width:980px;
+	height:80px;
+	position:relative;
+}
+#search .logo-title{
+	font-size:12px;
+	width:100px;
+	height:32px;   
+	line-height:32px;
+	padding-left:10px;
+	position:absolute;
+	top:23px;
+	left:165px;
+	background: url(../img/global.png) no-repeat scroll -200px -204px;;
+}
+#search .arch{
+  position:absolute;
+  top:25px; 
+  left:600px;
+}
+#search .arch .text{
+	width:250px;
+	height:25px;
+	border:1px solid green;
+}
+#search .arch .submit{
+	width:60px;
+    height:30px;
+    color:white;
+    background:#073F26 left center;
+}
+#search .arch .submit:hover{
+	color:maroon;
+}
+#nav {
+	width:980px;
+	height:50px; 
+	position:relative;
+}
+#nav ul{
+	font-size:18px;
+	list-style-type:none;
+	height:50px;
+}
+#nav ul li{
+	width:140px;            /*对li进行设置长度*/
+	line-height:50px;
+	float:left;
+    text-align:center;
+    background: #073f26;
+}
+#nav ul li a{
+	color:white;
+	text-decoration:none;
+	display:inline-block;     /*这是可以设置区块长和高的内联(也可以使用block)*/
+	width:140px;
+	height:50px;
+}
+#nav ul li a:hover{
+	
+	text-decoration:underline;
+}  
+   /*顶部结束*/
+
+#footer{
+	width:980px;
+	height:115px;
+	font-size:12px;
+	color:#666666;
+	text-align:center;
+	line-height:20px;
+	border-top:1px solid lightgray;
+	clear:both;
+}
+#footer p a{
+    color:#444;
+    text-decoration:none;
+}
+#footer p a:hover{
+	color:purple;
+	text-decoration:underline;
+}

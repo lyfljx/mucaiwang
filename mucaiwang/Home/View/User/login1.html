@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+
+    <link type="text/css" rel="stylesheet" href=" <?php echo HOME_CSS_URL; ?>reset.css">
+    <link type="text/css" rel="stylesheet" href=" <?php  echo HOME_CSS_URL; ?>register.css">
+    <style type="text/css">
+        .com_trade {
+            border: 2px solid #BDBDBD;
+        }
+    </style>
+    <!--[if IE 6]>
+<!--<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>-->
+    <!--<script type="text/javascript" src="js/ie6Fixpng.js"></script>-->
+    <!-- [endif] -->
+</head>
+<!--命名要规范-->
+
+<body>
+<!--头部每一个模块用一个div来表示-->
+<div class="headerBar">
+    <div class="logoBar red_logo">
+        <div class="comWidth">
+            <div class="logo fl">
+                <a href="#"><img src="<?php echo HOME_IMG_URL;?>logo.png" alt="中国木材网"></a>
+            </div>
+            <h3 class="welcome_title">欢迎登录</h3>
+        </div>
+    </div>
+</div>
+
+<div class="regBox">
+    <div class="login_cont">
+        <form method="post" enctype="multipart/form-data" action=" __SELF__">
+            <ul class="login" style="line-height: 20px;">
+                <li>
+                    <span class="reg_item"><i>*</i><label for="user_name">用户名：</label></span>
+                    <div class="input_item">
+                        <input type="text" name="user_name" id="user_name" placeholder="请输入用户名"
+                               class="login_input user_icon" required="required">
+                    </div>
+                    <!--class有有两个别名分别是login_input user_icon-->
+                </li>
+                <li>
+
+                    <span class="reg_item"><i>*</i><label for="user_password">密码：</label></span>
+                    <div class="input_item">
+                        <input type="password" id="user_password" name="user_password" class="login_input "
+                               placeholder="请输入正确的密码" required="required">
+
+                    </div>
+                </li>
+                <li>
+                    <span class="reg_item"><label for="Verify">输入验证码：</label></span><span style="margin: 10px;"><img
+                        src="__CONTROLLER__/VerifyImg"
+                        onclick="this.src='__CONTROLLER__/VerifyImg/'+Math.random()"/></span>
+                    <div class="input_item">
+                        <input type="text" id="Verify" name="Verify" placeholder="请输入验证码" class="login_input "required="required">
+
+                    </div>
+                </li>
+
+                <!-- <li><span class="reg_item"><i>*</i>头像：</span><div class="input_item"><input type="file"  name="myFace" ></div></li>-->
+                <!-- <li class="autoLogin"><span class="reg_item">&nbsp;</span><input type="checkbox" id="t1" class="checked"><label for="t1">我同意什么什么条款</label>
+
+                        </li> -->
+
+                <li>
+                    <span class="reg_item">&nbsp;</span>
+
+                    <button style="border:none;width:200px;height:35px;outline:none;padding: 0px;"><span
+                            style="font-family: '微软雅黑';font-size: 20px;">登录</span></button>
+
+                </li>
+
+            </ul>
+        </form>
+    </div>
+</div>
+
+<div class="hr_25"></div>
+<!--<div class="footer">-->
+<!--<p><a href="#">慕课简介</a><i>|</i><a href="#">慕课公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：400-675-1234</p>-->
+<!--<p>Copyright &copy; 2006 - 2014 慕课版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>-->
+<!--<p class="web"><a href="#"><img src="images/webLogo.jpg" alt="logo"></a><a href="#"><img src="images/webLogo.jpg" alt="logo"></a><a href="#"><img src="images/webLogo.jpg" alt="logo"></a><a href="#"><img src="images/webLogo.jpg" alt="logo"></a></p>-->
+<!--</div> -->
+</body>
+
+</html>

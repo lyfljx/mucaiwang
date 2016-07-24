@@ -1,0 +1,71 @@
+[ 2016-06-25T15:09:44+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/res/myPage.js
+ERR: 非法操作:res
+
+[ 2016-06-25T15:09:45+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/res/myPage.js
+ERR: 非法操作:res
+
+[ 2016-06-25T15:10:37+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/res/myPage.js
+ERR: 非法操作:res
+
+[ 2016-06-25T15:10:38+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/res/myPage.js
+ERR: 非法操作:res
+
+[ 2016-06-25T19:50:09+08:00 ] 127.0.0.1 /mucaiwang//index.php/Index/Pro/showpro
+ERR: 非法操作:Pro
+
+[ 2016-06-25T19:50:14+08:00 ] 127.0.0.1 /mucaiwang//index.php/Index/Pro/showPro
+ERR: 非法操作:Pro
+
+[ 2016-06-25T20:29:37+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/Pro/showDesc/pro_id/1
+ERR: 非法操作:Pro
+
+[ 2016-06-25T20:29:50+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/Pro/showDesc/pro_id/1
+ERR: 非法操作:Pro
+
+[ 2016-06-25T20:30:16+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/Pro/showDesc/pro_id/1
+ERR: 非法操作:Pro
+
+[ 2016-06-25T21:02:45+08:00 ] 127.0.0.1 /mucaiwang/index.php/
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-06-25T21:13:51+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/User/register.html
+ERR: 1146:La table 'mucai.mucai_com_trade' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_com_trade`
+
+[ 2016-06-25T21:25:54+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/User/register.html
+ERR: 1146:La table 'mucai.mucai_prov' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_prov`
+
+[ 2016-06-25T21:32:38+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/User/register.html
+ERR: 1054:Champ 'com_city' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `mucai_com` (`com_name`,`com_attribute`,`com_trade`,`com_address`,`com_main_pro`,`com_owned_market`,`com_url`,`com_create_time`,`com_city`,`com_prov`) VALUES ('大秦','2','6','长平','锐士','1','https://www.baidu.com','1466861558','6','4')
+
+[ 2016-06-25T21:34:08+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/User/register.html
+ERR: 1054:Champ 'com_city' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `mucai_com` (`com_name`,`com_attribute`,`com_trade`,`com_address`,`com_main_pro`,`com_owned_market`,`com_url`,`com_create_time`,`com_city`,`com_prov`) VALUES ('大秦','2','3','长平','锐士','4','https://www.baidu.com','1466861648','4','4')
+
+[ 2016-06-25T21:40:56+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/lookList/pro_user_id/1
+ERR: 1054:Champ 'pro_state' inconnu dans field list
+ [ SQL语句 ] : UPDATE `mucai_pro` SET `pro_name`='檀香紫檀',`pro_com_class_id`='1',`pro_unitprice`='1.00',`pro_albumpath`='dshdjsjsa',`pro_salbumpath`='',`pro_style`='100*100',`pro_desc`='very good',`pro_grow_area`='广东深圳',`pro_local_area`='西双版纳',`pro_create_time`='2016',`pro_cut_time`='2006-2-9',`pro_status`='1',`pro_user_id`='1',`pro_state`='1' WHERE `pro_id` = '12'
+
+[ 2016-06-25T21:41:11+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/lookList/pro_user_id/1
+ERR: 1054:Champ 'pro_state' inconnu dans field list
+ [ SQL语句 ] : UPDATE `mucai_pro` SET `pro_name`='檀香紫檀',`pro_com_class_id`='1',`pro_unitprice`='1.00',`pro_albumpath`='dshdjsjsa',`pro_salbumpath`='',`pro_style`='100*100',`pro_desc`='very good',`pro_grow_area`='广东深圳',`pro_local_area`='西双版纳',`pro_create_time`='2016',`pro_cut_time`='2006-2-9',`pro_status`='1',`pro_user_id`='1',`pro_state`='1' WHERE `pro_id` = '12'
+
+[ 2016-06-25T22:06:16+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offer_order.html
+ERR: 1054:Champ 'prov' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `mucai_offer` (`offer_pro_name`,`offer_price`,`offer_p_size`,`pclass`,`class`,`offer_cut_time`,`offer_description`,`offer_user_id`,`offer_create_time`,`offer_com_id`,`prov`,`city`) VALUES ('方木条','111','20*40*60','1','2','1467216000','aaaa','1','1466863557','5','4','3')
+
+[ 2016-06-25T22:26:26+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/offer_id/1
+ERR: 参数错误或者未定义:buyer_id
+
+[ 2016-06-25T22:27:16+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/offer_id/1
+ERR: 参数错误或者未定义:buyer_id
+
+[ 2016-06-25T22:48:37+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/offer_id/1/buyer_id/
+ERR: 参数错误或者未定义:buyer_id
+
+[ 2016-06-25T22:50:06+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listOffer/offer_id/1/buyer_id/
+ERR: 参数错误或者未定义:buyer_id
+

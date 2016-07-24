@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}public.css"/>
+<link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}node.css"/>
+<!-- 这里是节点列表页面，添加的链接到addnode处理 -->
+
+<script type="text/javascript" src='{$Think.const.ADMIN_JS_URL}jquery-1.7.2.min.js'></script>
+<script type="text/javascript">
+	$(function(){
+		$('input[level=1]').click(function(){
+			var inputs = $(this).parents('.app').find('input');
+			$(this).attr('checked') ? inputs.attr('checked','checked') :
+				inputs.removeAttr('checked');
+		});
+			$('input[level=2]').click(function(){
+				var inputs = $(this).parents('dl').find('input');
+				$(this).attr('checked') ? inputs.attr('checked','checled') :
+					inputs.removeAttr('checked');
+			});	
+	});
+</script>
+</head>
+<body>
+<form action="{:U('Admin/Rbac/setAccess')}" method="post">
+	<div id="wrap">
+		<a href="{:U('Admin/Rbac/Role')}" class="add-app">返回</a>
+		
+		<foreach name='node' item='app'>
+			<div class='app'>
+				<p>
+					<strong>{$app.title}</strong>
+						<input type="checkbox" name='access[]' value='{$app.id}_1' level='1' <if condition='$app["access"]'>checked='checked'</if>/>
+					</p>
+				
+				<!-- name是数组，value需要传递两个参数，该节点的id和level，再用explode拆分 -->
+				<foreach name='app.child' item='action'>
+					<dl>
+						<dt>
+							<strong>{$action.title}</strong>
+								<input type="checkbox" name='access[]' value='{$action.id}_2' level='2' <if condition='$action["access"]'>checked='checked'</if>/>
+						
+							</dt>
+						
+						
+						<foreach name='action.child' item='method'>
+							<dd>
+								<span>{$method.title}</span>
+						<input type="checkbox" name='access[]' value='{$method.id}_3' level='3' <if condition='$method["access"]'>checked='checked'</if>/>
+	
+							</dd>
+						</foreach>
+					</dl>
+				</foreach>
+				
+			</div>
+		</foreach>
+	</div>
+	<input type="hidden" name="rid" value='{$rid}'/>
+	<input type="submit" value='保存修改' style='display:block;margin:20px auto;cursor:pointer'/>
+	</form>
+</body>
+</html>

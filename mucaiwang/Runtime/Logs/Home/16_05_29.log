@@ -1,0 +1,36 @@
+[ 2016-05-29T02:39:15+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/buyList,array(%20offer_id%20=%3E%20$v[offer_id]%20).html
+ERR: 非法操作:buyList,array( offer_id => $v[offer_id] )
+
+[ 2016-05-29T11:27:11+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/buyList/offer_id/27.html
+ERR: 非法操作:buyList
+
+[ 2016-05-29T13:29:55+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/buyList/offer_id/21
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-29T14:24:16+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer_buyList/offer_id/21
+ERR: 无法加载控制器:Offer_buyList
+
+[ 2016-05-29T14:41:30+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/buyList/offer_id/21
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-29T14:41:50+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/buyList/offer_id/21
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-29T15:36:16+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/showCom/com_id/
+ERR: 参数错误或者未定义:com_id
+
+[ 2016-05-29T15:46:37+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/buyList/offer_id/21
+ERR: XML标签语法错误 : condition="kk eq k"{$vv.k}
+
+[ 2016-05-29T22:52:57+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-05-29T22:55:00+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-05-29T22:55:01+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-05-29T22:55:02+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+

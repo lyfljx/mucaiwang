@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加分类</title>
+    <css file='{$Think.const.ADMIN_CSS_URL}public.css'/>
+</head>
+<body>
+<!--<h1>添加分类</h1>-->
+
+<!--<table width="70%" border="1" cellpadding="2" cellspacing="0" bgcolor="#cccccc">-->
+<!--<tr><th>父分类</th><th>父分类</th><th>父分类</th></tr>-->
+<!--&lt;!&ndash;<tr>&ndash;&gt;-->
+<!--&lt;!&ndash;<td>分类ID</td>&ndash;&gt;-->
+<!--&lt;!&ndash;<td>父类名称</td>&ndash;&gt;-->
+<!--&lt;!&ndash;<td>子类名称</td>&ndash;&gt;-->
+<!--&lt;!&ndash;<td>创建时间</td>&ndash;&gt;-->
+<!--&lt;!&ndash;<td colspan="2">操作</td>&ndash;&gt;-->
+<!--&lt;!&ndash;</tr>&ndash;&gt;-->
+<!--&lt;!&ndash;判断info是否为空&ndash;&gt;-->
+<!--<notempty name="pro">-->
+<!--<foreach name="pro" item="v">-->
+<!--&lt;!&ndash;v.数据表的名字&ndash;&gt;-->
+<!--<foreach name="v.pro_class" item="vv" key="k">-->
+<!--<tr>-->
+<!--&lt;!&ndash;<foreach name="vv" item="iv">&ndash;&gt;-->
+<!--<if condition="($k eq 0)">-->
+<!--<td rowspan="{$v.pro_class|count}">{$v.pro_pclass}</td>-->
+<!--</if>-->
+
+<!--<td align="left">{$vv.pro_class}</td>-->
+<!--&lt;!&ndash;<td align="left">{$v.pro_pclass_id}</td>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<td align="left">子分类</td>&ndash;&gt;-->
+<!--</tr>-->
+<!--&lt;!&ndash;<td colspan="5"><input type="submit" value="添加分类"/></td>&ndash;&gt;-->
+<!--&lt;!&ndash;</foreach>&ndash;&gt;-->
+<!--</foreach>-->
+<!--</foreach>-->
+<!--<else/>-->
+<!--<tr><td>查询的结果不存在！！</td></tr>-->
+<!--</notempty>-->
+
+
+<!--</table>-->
+<table class="table" >
+    <tr style="background-color: #e8e8e8">
+        <!--<th>id</th>-->
+        <td align="center">父分类</td>
+        <td align="center">子分类</td>
+         <td align="center">操作</td>
+
+    </tr>
+
+    <foreach name='pro' item='v'>
+        <foreach name="v.pro_class" item="vv" key="k">
+            <tr>
+                <!--<td>{$v.pro_pclass_id}</td>-->
+                <if condition="($k eq 0)">
+                    <td rowspan="{$v.pro_class|count}" align="center">{$v.pro_pclass}</td>
+                </if>
+                <td align="center">{$vv.pro_class}</td>
+                <td align="center"><a href="#">编辑</a> <a href="__CONTROLLER__/delcate/pro_pclass_id/{$v.pro_pclass_id}/pro_class_id/{$vv.pro_class_id}">删除</a></td>
+            </tr>
+        </foreach>
+    </foreach>
+</table>
+</body>
+</html>
+
+
+
+

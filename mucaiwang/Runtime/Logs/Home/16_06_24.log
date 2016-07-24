@@ -1,0 +1,39 @@
+[ 2016-06-24T15:08:04+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index4/index4
+ERR: 无法加载控制器:Index4
+
+[ 2016-06-24T16:28:38+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/js/list.js
+ERR: 非法操作:js
+
+[ 2016-06-24T16:28:38+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/index.css
+ERR: 非法操作:index.css
+
+[ 2016-06-24T16:28:38+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/global.css
+ERR: 非法操作:global.css
+
+[ 2016-06-24T16:33:54+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Index/index.html
+ERR: 非法操作:index
+
+[ 2016-06-24T16:34:15+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/index.html
+ERR: 非法操作:index
+
+[ 2016-06-24T16:36:12+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/index.css
+ERR: 非法操作:index.css
+
+[ 2016-06-24T16:36:12+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/global.css
+ERR: 非法操作:global.css
+
+[ 2016-06-24T16:36:12+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/js/list.js
+ERR: 非法操作:js
+
+[ 2016-06-24T23:11:30+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-06-24T23:29:52+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/showCom/com_id/3
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-06-24T23:36:15+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-06-24T23:37:00+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+

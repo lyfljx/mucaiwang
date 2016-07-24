@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><a href="__CONTROLLER__/offerlist"><h4>返回</h4></a></div>
+<table width="100%" border="1px dashed" cellpadding="2" cellspacing="0">
+    <tr>
+        <td align="center">报价人id</td>
+        <td align="center">公司id</td>
+        <td align="center">邮箱</td>
+        <td align="center">报价人</td>
+        <td align="center">职位</td>
+        <td align="center">电话</td>
+        <td align="center">QQ</td>
+        <td align="center">固定电话</td>
+        <td align="center">成功率</td>
+        <td align="center">信誉度</td>
+        <!--<td colspan="1" align="center">操作</td>-->
+        <!--<td align="center">查看记录</td>-->
+
+    </tr>
+    <tr>
+        <td align="center">{$z.user_id}</td>
+        <td align="center" bgcolor="#7fffd4"><a href="__CONTROLLER__/showCom/com_id/{$z.com_id}">{$info.com_name}</a>
+        </td>
+        <td align="center">{$z.user_email}</td>
+        <td align="center" bgcolor="#7fffd4">{$z.user_true_name}</td>
+        <td align="center">{$z.user_job}</td>
+        <td align="center" bgcolor="#7fffd4">{$z.user_phone}</td>
+        <td align="center">{$z.user_qq}</td>
+        <td align="center" bgcolor="#7fffd4">{$z.user_fixed_phone}</td>
+        <td align="center">
+            <!--查看别人对自己的评价-->
+            <!--{:U('Home/Offer/showDesc',array(offer_user_id=> $z['user_id']))}-->
+            <a href="{:U('Admin/Offer/showDesc',array(user_id=> $z['user_id']))}">查看</a>
+            <!--__CONTROLLER__/showDesc/buyer_id/{$z.user_id}-->
+        </td>
+        <!--显示成功率还有信誉度-->
+        <foreach name="credit" item="v">
+        <td align="center">{$v.credit}</td>
+        <td align="center">{$v.sRate}</td>
+        </foreach>
+
+    </tr>
+
+    <tr>
+        <td colspan="20" style="text-align: center;">
+            {$pagelist}
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+@charset "gb2312";
+/* CSS Document */
+
+body,td,th {font-family: "宋体","Arial Narrow",HELVETICA; font-size: 12px;color:#999;}
+body {background-color: #FFFFFF; margin:0; padding:0}
+a {color:#666;text-decoration: none;}
+a:hover {color:#A53158; text-decoration:underline }
+div,td,tr,ul,li,form,input,span,p,img,iframe{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6 {margin:0; padding:0; font-size:12px; border:0;}
+img,iframe {border:0}
+ul,li {list-style:none; margin:0; padding:0}
+#container {margin:0 auto; width:980px; height:auto; clear:both}
+.line1 {color:#999}
+.space1 {width:100%; height:10px; line-height:10px; clear:both; border:0; font-size:0; margin:0; padding:0;}
+.fontwt { font-weight:bold}
+.colorred {color:#A53158}
+.colorgreen {color:#060;}
+.colorgray {color:#888}
+.colorblue {color:#999}
+.colorblack {color:#333333}
+.marginl3 {margin-left:3px;}
+.border1 { border:1px solid #ccc;}
+.border9 { border:1px solid #ddd;}
+.f10px {font-size:10px}
+.cls {clear:both; font-size:0px; margin:0; padding:0; border:0; height:0; line-height:0;}
+.content {width:980px; clear:both; margin:0 auto;}
+
+.title {height:32px; line-height:32px; margin-bottom:4px; color:#222}
+.title h2 {float:left; font-size:14px; text-indent:8px;}
+.title a {color:#073F26}
+.title a:hover {color:#A53158}
+.title .more {float:right; width:45px; text-align:center}
+
+.list { overflow:hidden; }
+.list li {width:100%;line-height:24px; height:24px;}
+
+#news_nav {width:980px; height:60px; margin:0 auto;background:url(../img/news_bg.png) no-repeat 0 -128px; color:#999; }
+#news_nav ul { clear:both;}
+#news_nav ul li { margin-left:10px;  float:left; margin-top:11px; line-height:normal}
+#news_nav ul li a {color:#333}
+#news_nav ul li a:hover {color:#A53158}
+
+/*尾部样式*/
+.footerline {clear:both; width:980px; height:4px; line-height:4px; border-top:1px solid #CCC; background:#F7F7F7; font-size:1px; margin:0 auto;}
+.footer {width:980px; height:auto; margin:0 auto 10px auto; text-align:center; padding-top:8px; color:#333}
+.footer .beian { height:22px; line-height:22px; clear:both}
+.footer .beian a {color:#333; text-decoration:underline}
+.footercopy {line-height:24px; height: auto; width:760px;}
+.footercopy .icp {width:180px; height:80px; margin:0 auto;}
+
+/*头部head*/
+.head {margin:0 auto}
+.head a {color:#222}
+.head a:hover {color:#A53158}
+.fontcolor{color:#FFFFFF;font-size:14px;font-weight:bold;}
+.fontcolor2 {font-size:14px;}
+#search a{color:#112632;text-decoration: none;}
+.taboffbg{background-image:url(../img/nav_taboff.gif);text-align:center;font-size:14px;background-repeat:no-repeat;padding-top:7px;}
+#taboffbg2{background-image:url(../img/nav_taboff2.jpg);text-align:center;font-size:14px;background-repeat:no-repeat;padding-top:7px; color:#FFFFFF; font-weight:700}
+#taboffbg2 a{color:#ffffff;}
+#tabonbg{background-image:url(../img/nav_tabon.gif);text-align:center;font-size:14px;font-weight:bold;padding-top:7px;background-repeat:no-repeat;}
+#tabonbg a{color:#FFFFFF;}
+#tabonbg a:hover{color:#FFFF00;}
+.taboffbg3{background-image:url(../img/nav_taboff3.jpg);text-align:center;font-size:14px;background-repeat:no-repeat;padding-top:7px;}
+.tabonbg4{background-image:url(../img/nav_tabon2.jpg);text-align:center;font-size:14px;font-weight:bold;color:#FFFFFF;padding-top:7px;background-repeat:no-repeat;}
+.colorW{color:#cccccc;}
+#hotword a{color:#FFFFFF;text-decoration: none;}
+#search .colorW a{color: #FFFFFF;text-decoration:none;}
+#search .colorW a:hover{text-decoration:underline;}
+.top2{background-image:url(../img/nav_bg.gif);}

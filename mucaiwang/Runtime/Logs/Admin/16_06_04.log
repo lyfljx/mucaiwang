@@ -1,0 +1,4 @@
+[ 2016-06-04T23:38:33+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/looklist.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `buyer_id` FROM `mucai_offer_buyer` WHERE ( offer_id= ) 
+

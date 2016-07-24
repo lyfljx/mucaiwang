@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>审核-报价</title>
+</head>
+<body>
+
+<div style="boder:1px solid "><h4><a href="__CONTROLLER__/looklist">查看已审核</a></h4></div>
+<table width="100%" border="1px solid " cellpadding="2" cellspacing="0" class="list">
+
+    <tr>
+        <td align="center">订单序号</td>
+        <td align="center">产品名字</td>
+        <td align="center">分类1</td>
+        <td align="center">分类2</td>
+        <td align="center">产品价格</td>
+        <td align="center">产品规格</td>
+        <td align="center">报价人</td>
+        <td align="center">求购人</td>
+        <td align="center">产品描述</td>
+        <td align="center">创建时间</td>
+        <td align="center">截止时间</td>
+        <td align="center">审核状态</td>
+        <td align="center">是否过期</td>
+
+        <td colspan="2" align="center">操作</td>
+
+
+    </tr>
+
+
+    <foreach name="Offerinfo" item="v" key="k">
+        <foreach name="user_name" item="vv" key="kk">
+
+            <if condition="$v['offer_check'] eq  0 ">
+                <if condition="$v['offer_user_id'] eq $vv['user_id']">
+                    <!--当offer_user_id与user_id相等时，才会输出对应的变量-->
+                    <tr>
+
+                        <td align="center" bgcolor="#7fffd4">{$v.offer_id}</td>
+                        <td align="center">{$v.offer_pro_name}</td>
+                        <foreach name="class" item="vvv">
+                            <if condition="$v['offer_id'] eq $vvv['offer_id']">
+                                <td align="center" bgcolor="#7fffd4">{$vvv.pro_pclass}</td>
+                                <td align="center" bgcolor="#7fffd4">{$vvv.pro_class}</td>
+                            </if>
+                        </foreach>
+
+                        <td align="center">{$v.offer_price}</td>
+                        <td align="center" bgcolor="#7fffd4">{$v.offer_p_size}</td>
+                        <td align="center"><a href="__CONTROLLER__/lookuser/offer_user_id/{$v.offer_user_id}">{$vv.user_name}</a>
+                        </td>
+                        <td align="center">
+                            <if condition="in_array($v['offer_id'],$data) neq 0">
+                                <a href="{:U('Admin/Offer/buyList',array('offer_id'=>$v['offer_id']))}">查看</a>
+                                <else/>
+                                暂无
+                            </if>
+
+                        </td>
+                        <td align="center">
+                            <if condition="$v['offer_description'] neq null">
+                                <a href="{:U('offerDesc',array(offer_id => $v['offer_id']))}">查看</a>
+
+
+                                <else/>
+
+                                暂无
+
+                            </if>
+
+                        </td>
+
+
+                        <td align="center" bgcolor="#7fffd4"><?php echo date("Y-m-d",$v["offer_create_time"]);?></td>
+                        <td align="center"><?php echo date('Y-m-d',$v['offer_cut_time']);?></td>
+                        <td align="center">
+                            <if condition='$v["offer_check"]==0'>未审核</if>
+                            <if condition='$v["offer_check"]==1'>已审核通过</if>
+                            <if condition='$v["offer_check"]==2'>已审核未通过</if>
+                        </td>
+                        <td align="center">
+                            <if condition='$v["offer_status"] eq  1 '>未过期</if>
+                            <if condition='$v["offer_status"] eq  2 '>已过期</if>
+                        </td>
+                        <td align="center"><a href="__CONTROLLER__/check/offer_id/{$v.offer_id}/offer_check/1">允许发布</a>
+                        </td>
+                        <!--<td align="center">&nbsp;<a href="__CONTROLLER__/check/offer_id/{$v.offer_id}/offer_check/1"><img src="<?php echo ADMIN_IMG_URL ?>2.jpg"/></a>&nbsp;&nbsp;</td>-->
+                        <td align="center"><a href="__CONTROLLER__/check/offer_id/{$v.offer_id}/offer_check/2">拒绝发布</a>
+                        </td>
+
+                        <!--<td align="center">&nbsp;<a href="__CONTROLLER__/check_delete"><img src="<?php echo ADMIN_IMG_URL ?>4.jpg"/></a>&nbsp;&nbsp;</td>-->
+
+                        <!--点下确认键之后，确定发送邮件-->
+                        <!--<td align="center">&nbsp;&nbsp;<a href="">发送邮件</a>>&nbsp;&nbsp;</td>-->
+
+                    </tr>
+                </if>
+            </if>
+        </foreach>
+    </foreach>
+
+    <tr>
+        <td colspan="20" style="text-align: center;">
+            {$pagelist}
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,379 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: '宋体', "Narrow", HELVETICA; 
+}
+a{
+	color:#444444;
+	text-decoration:none;
+}
+a:hover{
+	color:purple;
+	text-decoration:underline;
+}
+ul{
+	list-style-type:none;
+}
+/* 公共样式*/
+#top-body{ 
+	font-size:12px;
+	margin:0 auto;
+	width:980px;
+	height:850px;
+	background-color:white;         
+}
+#buy{
+	width:246px;
+	height:535px;
+	float:left;
+}
+
+#buy #title li {
+	width:123px;
+	height:35px;
+	float:left;
+	text-align:center;
+}
+#buy #title  li a{
+	display:inline-block;
+	width:123px;
+	height:35px;
+	font-size:16px;
+	font-weight:bold;
+	color:#073f26;
+	line-height:35px;
+}
+
+#buy .list{
+	font-size:12px;
+	color:lightgray;
+	line-height:200%;
+	overflow:hidden;             /*行高加上溢出，可以实现一行，多余不显示*/     
+	clear:both;                  /*white-space:nowrap;这是强制在一行显示（ie6不支持）*/
+}
+#buy .list span{
+	color:purple;
+}
+#buy .list li{
+	height:23px;
+	overflow:hidden;
+}
+#buy .list li a{
+	margin-left:3px;	
+}
+#buy .list p{
+	margin-top:15px;
+	text-align:center;
+}
+#buy .list input{
+	font-weight:bold;
+}
+#buy .list-more li{
+	padding-left:150px;    
+}
+
+#body{
+	width:530px;
+	height:535px;
+	float:left;
+}
+#content{
+	width:526px;
+	float:left;
+	position:relative;
+}
+#smallnav{
+	width:530px;
+	height:31px;
+	background: url(../IMG/head_bg.png) repeat;
+	float:left;
+}
+#smallnav ul li{
+	width:127px;            /*对li进行设置长度*/
+	line-height:31px;
+	float:left;
+    text-align:center;
+}
+#smallnav ul li a{
+	font-size:14px;
+	display:inline-block;     /*这是可以设置区块长和高的内联*/
+	width:127px;
+	height:31px;
+}
+#top-title h1 a{
+	display:block;
+    font-size:18px;
+    text-align:center;
+    padding-top:12px;
+}
+#content .market{
+    padding-left:15px;
+    padding-top:0px;
+    width:220px;
+    height:422px;
+    position:absolute;
+    top:45px;
+    left:0;
+}
+#content .market dd{
+    overflow:hidden;
+    height:25px;
+}
+#content .market dd a{
+	font-size:15px;
+	line-height:23px;
+}
+#left-news{
+	width:260px;
+	height:452px;
+	float:right;
+	margin-top:2px;
+	margin-right:15px;
+}
+#left-news .redwood_pic{
+	width:255px;
+	height:225px;
+	border:1px solid lightgray; 
+	padding-left:2px; 
+	text-align:center;
+	margin-top:15px;
+}
+#left-news .pic-name{
+	margin-top:5px;
+}
+.special {
+	margin-top:15px;
+	font-size:13px;
+	width:257px;
+	height:178px;
+	background:#CDCDCD;
+	margin-left:2px;
+}
+.special .special-title{
+	width:80px;
+	height:22px;
+	letter-spacing:2px;
+	background:#073F26;
+	color:white;
+	text-align:center;
+}
+.special ul li{
+	line-height:22px;
+} 
+
+#news{
+	width:200px;
+	height:500px;
+	float:left;
+}
+#news .news-title{
+	display:inline-block;
+	width:100px;
+	font-size:16px;
+	font-weight:bold;
+	color:#073f26;      
+	text-align:center;
+	margin:15px 15px;
+}
+.more a{
+	color:#999;
+	font-size:13px;
+}
+ .more a:hover{
+	color:lightgray;
+}
+#news ul li{
+	line-height:normal;
+	margin:15px 0 0 5px;
+}
+#list_1{
+	display: block;
+}
+#list_2{
+	display: none;
+}
+.ad-pic1{
+	width: 980px;
+	height:132px;
+	margin: 45px auto 15px auto;
+	position:relative;
+}
+.ad-left{
+	width:588px;
+	height:132px; 
+	position:absolute;          
+	top:0;
+	left:0;
+     
+}
+.ad-left ul li{
+	float:left;
+	margin-right:2px;
+}
+.ad-right{
+	width:390px;
+	height:132px;  
+	position:absolute;        
+	top:0;
+	right:0;
+}
+
+.two-body{
+	width:980px;
+	height:360px;
+	position:relative;                      
+}
+.tw-left{
+	width:750px;
+	height:360px;               
+    border:1px solid #cccccc;
+	position:relative;
+}
+.tw-title{
+	color:#073f26;
+	font-weight:bold;
+	display:inline-block;
+	padding-left:15px;
+	margin:5px 0 5px 0;
+
+}
+.span-nav a{
+	font-size:13px;
+    display:inline-block;
+}
+.span-nav{
+	display:inline-block;
+	position:absolute;
+	top:5px;
+	right:15px;
+}
+.tw-down-left{
+	width:300px;         
+}
+.tw-down-left ul li, .tw-down-right ul li{
+    font-size:14px;
+    height:29px;
+    line-height:29px;
+    padding-left:5px;
+    color:#444444;
+}
+.tw-down-right{
+	width:300px; 
+	margin-top:5px;        
+	position:absolute;
+	top:25px;
+	right:80px;
+}
+.tw-top-box{
+	width:223px;
+	height:180px;
+	border:1px solid #cccccc; 
+	position:absolute; 
+	top:0;
+	right:0;
+ }
+ .tw-top-box ul li{
+ 	font-size:13px;
+ 	color:#444444;
+ 	height:23px;
+ 	line-height:23px;
+ }
+ .tw-down-box{
+	width:223px;
+	height:150px;
+	border:1px solid #cccccc; 
+	position:absolute; 
+	top:210px;
+	right:0;
+ }
+.tw-down-box ul li{
+	font-size:13px;
+	width:42px;
+	text-align:center; 
+	margin:5px 0 5px 0;       
+	float:left;
+}
+.tw-more-title{
+	padding-left:50px;
+}
+.two-down{
+	width:980px;
+	height:350px;
+	margin:20px 0 15px 0;
+	border:1px solid #cccccc;
+	position:relative;                      
+}
+.two-down ul{
+	margin-top:15px;
+}
+.two-down ul li{
+	color:#333333;
+	font-size:13px;
+	font-weight:bold;
+    width:80px;
+    height:25px; 
+    line-height:25px;              
+    text-align:center;   
+    margin:2px 0 3px 10px;
+    background:#efefef;
+}
+.tw-table{
+	width:860px;
+	height:320px;   
+	position:absolute;
+	top:35px;
+	right:10px;
+}
+.tw-tab-title{
+	color:#666666;
+	font-size:13px;
+	background:#f7f7f7;
+}
+
+.tw-table td{
+	font-size:12px;
+	text-align:center;    
+    border:1px solid #eeeeee;
+}
+.tab-price{
+    color:#b6529e;
+}
+.ad-pic2{
+	margin-top:15px;
+	height:100px;     
+}
+.friend{
+	width:980px;
+	height:105px;
+	margin-bottom: 20px;
+	border:1px solid #cccccc;
+}
+.friend ul li {
+	font-size:13px;
+	color:#333333;
+	text-align:center;
+	width:130px;
+	height:22px;
+	float:left;          
+}
+
+#con ul li{
+	width:120px;            /*瀵筶i杩涜璁剧疆闀垮害*/
+	line-height:50px;
+	float:left;
+	text-align:center;
+	background: #073f26;
+}
+
+
+#con ul li a{
+	color:white;
+	text-decoration:none;
+	display:inline-block;     /*杩欐槸鍙互璁剧疆鍖哄潡闀垮拰楂樼殑鍐呰仈(涔熷彲浠ヤ娇鐢╞lock)*/
+	width:122px;
+	height:50px;
+}
+#con ul li a:hover{
+
+	text-decoration:underline;
+}

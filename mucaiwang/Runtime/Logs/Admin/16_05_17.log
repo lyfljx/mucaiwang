@@ -1,0 +1,96 @@
+[ 2016-05-17T01:03:50+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:04:18+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:04:31+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:04:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:06:19+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:06:30+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:07:03+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:07:04+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:07:17+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:07:18+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:07:45+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:07:45+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:07:48+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:09:20+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:18:08+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:18:49+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:19:09+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:19:21+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:19:35+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:19:46+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:20:35+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:20:37+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:22:50+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:22:53+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:23:08+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T01:23:11+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Rbac/user.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-17T02:17:49+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Login/login.html
+ERR: 1064:Erreur de syntaxe près de 'as role, as user, as access , as node where user.user_id='' and user.role_id=rol' à la ligne 1
+ [ SQL语句 ] : select node.id,node.name from  as role, as user, as access , as node where user.user_id='' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1
+
+[ 2016-05-17T21:11:37+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Index/index.html
+ERR: 1054:Champ 'role' inconnu dans field list
+ [ SQL语句 ] : SELECT `role` FROM `mucai_user` WHERE `id` = 2 
+
+[ 2016-05-17T21:31:55+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Index/index.html
+ERR: Think\Model:fiels方法不存在！
+
+[ 2016-05-17T21:43:27+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Index/index.html
+ERR: 1054:Champ 'name' inconnu dans field list
+ [ SQL语句 ] : SELECT `name` FROM `mucai_access` WHERE `role_id` = 1 
+
+[ 2016-05-17T22:34:54+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Index/%7B%20:U('Admin/News/release')%20%7D
+ERR: 非法操作:{ :U('Admin
+

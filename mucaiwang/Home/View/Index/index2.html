@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script type="text/javascript" src="<?php echo HOME_JS_URL ?>list.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="<?php echo HOME_CSS_URL ?>index.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo HOME_CSS_URL ?>global.css"/>
+
+</head>
+<body>
+<div id="header">
+
+</div>
+<div id="search">
+    <div><a href=""><img src="<?php echo HOME_IMG_URL?>logo.png"/></a></div>
+    <div class="logo-title"><span>权威·专业·专著</span></div>
+    <p class="arch"><input type="text" name="" value="请输入内容：" id="" class="text"/>
+        <input type="submit" name="" value="搜索" class="submit"/></p>
+</div>
+<if condition='$user["user_id"]== 0'>
+    <a href="{:U('Home/User/login')}" title="登录">登录</a>
+    <else/>
+    当前用户：{$user.user_name}&nbsp;&nbsp;&nbsp;<a href="{:U('Home/Comuser/index')}">用户管理页面</a>
+    <a href="{:U('Home/User/outLogin')}" title="退出登录">退出登录</a>
+</if>
+<a href="{:U('Home/User/register')}" title="注册">注册</a>
+
+<div id="nav">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">木材商城</a></li>
+        <li><a href="#">求购</a></li>
+        <li><a href="#">报价</a></li>
+        <li><a href="#">资讯</a></li>
+        <li><a href="#">行情</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+</div>
+<div id="buy">
+    <div id="title">
+        <ul>
+            <li><a href="#" title="木材求购" onmouseover="list_1_change()">木材求购</a></li>
+            <li><a href="#" title="木材报价" onmouseover="list_2_change()">木材报价</a></li>
+        </ul>
+    </div>
+    <div class="list" id="list_1">
+        <ul>
+            <foreach name="purchase" item="u">
+                <li><span>[求购]</span><a href="{:U('Home/Index/showPur',array('pur_id'=>$u['pur_id']))}"
+                                        title="{$u['pur_good_rname']}">{$u['pur_good_rname']}</a></li>
+            </foreach>
+        </ul>
+    </div>
+    <div class="list" id="list_2">
+
+        <ul>
+            <foreach name="info" item="v">
+                <li><span>[报价]</span><a href="__CONTROLLER__/listOffer/offer_id/{$v.offer_id}/buyer_id/{$Think.session.home_id}" title="花旗松原木">{$v.offer_description}</a>
+                </li>
+            </foreach>
+        </ul>
+    </div>
+</div>
+<div id="body">
+    <div id="smallnav">
+        <ul>
+            <li><a href="#" title="木业要闻">木业要闻</a></li>
+            <li><a href="#" title="商业数据">商业数据</a></li>
+            <li><a href="#" title="木材推荐">木材推荐</a></li>
+            <li><a href="#" title="木材种类">木材种类</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="top-title"><h1><a href="#">市场新动向：木材的新世界道路</a></h1></div>
+        <div class="market">
+            <dl>
+                <foreach name="new" item="v">
+                    <dl>
+                        <dd>• <a href="{:U('Home/Index/showNew',array('nid'=>$v['id']))}">{$v['title']}</a></dd>
+                    </dl>
+                </foreach>
+            </dl>
+        </div>
+        <div id="left-news">
+            <div class="redwood_pic"><a href="#" title="小赞市场血檀红木迎来热卖"><img src="<?php echo HOME_IMG_URL?>12.jpg"
+                                                                           width="245" height="200"></a>
+                <p class="pic-name"><a href="#" title="小赞市场血檀红木迎来热卖">小赞市场血檀红木迎来热卖</a></p>
+            </div>
+            <div class="special">
+                <ul>
+                    <li class="special-title">木业专题</li>
+                    <li>【<a href="#" title="红木产业（2015发布）">红木产业（2015发布）</a>】</li>
+                    <li>【<a href="#" title="2013-2014我国人造板发展情况">2013-2014我国人造板发展情况</a>】</li>
+                    <li>【<a href="#" title="第八届中国人造板发展论坛">第八届中国人造板发展论坛</a>】</li>
+                    <li>【<a href="#" title="012-2013对华胶合板反倾销国家盘点">2012-2013对华胶合板反倾销国家盘点</a>】</li>
+                    <li>【<a href="#" title="欧盟木材法规">欧盟木材法规</a>】</li>
+                    <li>【<a href="#" title="美国对华硬木胶合板“双反">美国对华硬木胶合板“双反</a>】</li>
+                    <li>【<a href="#" title="木材缺陷限度及平等规则">木材缺陷限度及平等规则</a>】</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="news">
+    <a href="#" title="快讯" class="news-title">快讯</a> <span class="more"><a href="#">更多 >></a></span>
+    <ul>
+        <li><span>2016/3/31</span><br/><a href="#" title="南康家具在广东三大国际家具展中斩获颇丰">南康家具在广东三大国际家具展中斩获颇丰</a></li>
+        <li><span>2015/11/17</span><br/><a href="#" title="东方兴业城荣获“中国特级木材市场”等三项荣誉称号">东方兴业城荣获“中国特级木材市场”等三项荣誉称号</a></li>
+        <li><span>2015/7/7</span><br/><a href="#" title="从马斯洛需求层次理论看木材专业市场的服务">从马斯洛需求层次理论看木材专业市场的服务</a></li>
+        <li><span>2015/9/21</span><br/><a href="#" title="委内瑞拉侨领考察东方兴业城"> 委内瑞拉侨领考察东方兴业城></a></li>
+        <li><span>2015/8/3</span><br/><a href="#" title="2015年7月东方兴业城人造板市场行情总结">2015年7月东方兴业城人造板市场行情总结</a></li>
+        <li><span>2015/8/3</span><br/><a href="#" title="2015年7月东方兴业城木枋市场行情总结">2015年7月东方兴业城木枋市场行情总结</a></li>
+    </ul>
+</div>
+<div id="footer">
+    <div>
+        <p><a href="">关于我们</a> |<a href="">广告服务</a>| <a href="">银行汇款</a>| <a href="">会员帮助</a>|<a href="">联系我们</a>|<a
+                href="">访客留言</a>|<a href="">负责声明</a>|<a href="">服务条款</a>|<a href="">网络地图</a></p>
+        <p>版权所有 中国木材网 Copyright©2015 chinatimber.org. All Rights Reserved</p>
+        <p>增值电信业务经营许可证：粤B2-20100348 ICP备案：粤ICP备14005127号</p>
+    </div>
+</div>
+</body>
+</html>

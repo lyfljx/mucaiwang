@@ -1,0 +1,12 @@
+[ 2016-06-18T16:50:49+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/showDesc/buyer_id/15
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(buy_score) from  mucai_Offer_buyer GROUP BY offer_user_id' at line 1
+ [ SQL语句 ] : select offer_user_id sum(buy_score) from  mucai_Offer_buyer GROUP BY offer_user_id 
+
+[ 2016-06-18T16:50:50+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/showDesc/buyer_id/15
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(buy_score) from  mucai_Offer_buyer GROUP BY offer_user_id' at line 1
+ [ SQL语句 ] : select offer_user_id sum(buy_score) from  mucai_Offer_buyer GROUP BY offer_user_id 
+
+[ 2016-06-18T16:51:25+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/showDesc/buyer_id/15
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum(buy_score) from  mucai_offer_buyer GROUP BY offer_user_id' at line 1
+ [ SQL语句 ] : select offer_user_id sum(buy_score) from  mucai_offer_buyer GROUP BY offer_user_id 
+

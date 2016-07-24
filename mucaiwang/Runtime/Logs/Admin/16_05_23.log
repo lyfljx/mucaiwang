@@ -1,0 +1,9 @@
+[ 2016-05-23T22:12:58+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/%3C%3Ephp%20echo%20ADMIN_IMG_URL?%3E
+ERR: 非法操作:php echo ADMIN_IMG_URL
+
+[ 2016-05-23T22:18:49+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/ADMIN_IMG_URL1gif
+ERR: 非法操作:ADMIN_IMG_URL1gif
+
+[ 2016-05-23T22:19:23+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/ADMIN_IMG_URL1gif
+ERR: 非法操作:ADMIN_IMG_URL1gif
+

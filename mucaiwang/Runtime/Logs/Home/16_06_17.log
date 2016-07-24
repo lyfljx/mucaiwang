@@ -1,0 +1,22 @@
+[ 2016-06-17T00:45:00+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/alterOffer/offer_id/50.html
+ERR: 1062:Duplicate entry '50' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `mucai_offer` (`offer_id`,`offer_pro_name`,`offer_price`,`offer_p_size`,`offer_origin_place`,`offer_com_id`,`offer_description`,`offer_create_time`,`offer_cut_time`,`pclass`,`class`,`offer_user_id`,`offer_status`,`offer_check`) VALUES ('50','dsds','sss','ssss','00','14','','1465881336','1465920000','2','201','19','2','1')
+
+[ 2016-06-17T02:04:37+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/buylist
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-17T02:04:44+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/buyList
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-17T02:05:17+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/buyList/user_id/19
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-17T15:18:26+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-06-17T15:18:34+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-06-17T20:06:53+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/buyList
+ERR: 参数错误或者未定义:offer_id
+

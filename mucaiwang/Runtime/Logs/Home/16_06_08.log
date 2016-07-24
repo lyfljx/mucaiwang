@@ -1,0 +1,25 @@
+[ 2016-06-08T03:00:09+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/laydate/laydate.js
+ERR: 无法加载控制器:Laydate
+
+[ 2016-06-08T10:44:10+08:00 ] 127.0.0.1 /mucaiwang//index.php/laydate/laydate.js
+ERR: 无法加载控制器:Laydate
+
+[ 2016-06-08T10:45:02+08:00 ] 127.0.0.1 /mucaiwang//index.php/laydate/laydate.js
+ERR: 无法加载控制器:Laydate
+
+[ 2016-06-08T10:46:23+08:00 ] 127.0.0.1 /mucaiwang/index.php/laydate/laydate.js
+ERR: 无法加载控制器:Laydate
+
+[ 2016-06-08T10:55:55+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/CSS/laydate.cssneed/laydate.css
+ERR: 无法加载控制器:CSS
+
+[ 2016-06-08T10:55:55+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/CSS/laydate.cssskins/default/laydate.css
+ERR: 无法加载控制器:CSS
+
+[ 2016-06-08T11:27:16+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/tianjia
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `com_id` FROM `mucai_register_user` WHERE ( user_id=  ) LIMIT 1  
+
+[ 2016-06-08T11:30:03+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/buy_order
+ERR: 非法操作:buy_order
+

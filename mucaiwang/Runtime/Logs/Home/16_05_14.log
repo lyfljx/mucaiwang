@@ -1,0 +1,15 @@
+[ 2016-05-14T22:09:16+08:00 ] 127.0.0.1 /mucaiwang/index.php
+ERR: 模板不存在:D:/php/code/mucaiwang/Home/View/Index/index.html
+
+[ 2016-05-14T22:45:44+08:00 ] 127.0.0.1 /mucaiwang/index.php/Index/index
+ERR: Syntax Error in template "D:/php/code/mucaiwang/Home/View\Index\index.html"  on line 74 "&lt;dd&gt;• &lt;a href=&quot;{:U('Index/Index/showNew',array('nid'=&gt;$v['id']))}&quot; &gt;{$v['title']}&lt;/a&gt;&lt;/dd&gt;"  - Unexpected ":"
+
+[ 2016-05-14T22:49:35+08:00 ] 127.0.0.1 /mucaiwang/index.php/Index/%3C?php%20echo%20CSS_URL;?%3Eindex.css
+ERR: 非法操作:
+
+[ 2016-05-14T22:49:35+08:00 ] 127.0.0.1 /mucaiwang/index.php/Index/%3C?php%20echo%20IMG_URL;?%3E12.jpg
+ERR: 非法操作:
+
+[ 2016-05-14T22:49:35+08:00 ] 127.0.0.1 /mucaiwang/index.php/Index/%3C?php%20echo%20IMG_URL;?%3E16.jpg
+ERR: 非法操作:
+

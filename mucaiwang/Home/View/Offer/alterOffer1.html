@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>报价</title>
+    <script type="text/javascript" src="<?php echo HOME_JS_URL?>laydate.js"></script>
+
+</head>
+<body>
+<h3><a href="__CONTROLLER__/offerlist/offer_user_id/{$Think.session.home_id}">返回</a></h3>
+<form action="__SELF__" method="post">
+    <table width="70%" border="1" cellpadding="5" cellspacing="0" bgcolor="#cccccc">
+
+        <td><input type="hidden" name="offer_create_time" value="<?php echo time();?>"></td>
+        <input type="hidden" name="offer_user_id" value="{$Think.session.home_id}">
+        <tr>
+            <td align="right">产品名字：&nbsp;</td>
+            <td><input type="text" name="offer_pro_name" required="required" value="{$info.offer_pro_name}"/></td>
+
+        </tr>
+        <tr>
+            <td align="right">产品规格：&nbsp;</td>
+            <td><input type="text" name="offer_p_size" required="required" value="{$info.offer_p_size}"/></td>
+
+        </tr>
+        <tr>
+            <td align="right">产品价格：&nbsp;</td>
+            <td><input type="text" name="offer_price" value="面议"/></td>
+
+        </tr>
+        <!--<tr>-->
+        <!--<td align="right">报价人：&nbsp;</td>-->
+        <!--<td><input type="text" name="offer_user_name" value="{$info.offer_user_name}" required="required"/></td>-->
+
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td align="right">公司名称：&nbsp;</td>-->
+        <!--<td><input type="text" name="offer_com" value="{$info.offer_com}" required="required"/></td>-->
+        <!--</tr>-->
+        <tr>
+            <td align="right">截止时间：&nbsp;</td>
+            <td>
+                <input id="hello" class="laydate-icon" name="offer_cut_time"
+                       type="text" required="required" value="<?php echo date('Y-m-d',$info['offer_cut_time'])?>">
+            </td>
+            <script>
+                laydate({
+                    elem: '#hello', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+                    event: 'focus' //响应事件。如果没有传入event，则按照默认的click
+                });
+            </script>
+            <!--<td><input type="text" name="offer_cut_time" value="<?php echo date('Y-m-d',$info['offer_cut_time'])?>"-->
+            <!--required="required"/></td>-->
+
+        </tr>
+        <tr>
+            <td align="right">报价地点：&nbsp;</td>
+            <td><input type="text" name="offer_origin_place" value="{$info.offer_origin_place}" required="required"/>
+            </td>
+
+        </tr>
+        <tr>
+            <td align="right">分类1：&nbsp;</td>
+            <td><input type="text" name="offer_pro_class" value="{$pclass.pro_pclass}" required="required"/></td>
+        </tr>
+        <tr>
+            <td align="right">分类2：&nbsp;</td>
+            <td><input type="text" name="offer_pro_class" value="{$class.pro_class}" required="required"/></td>
+        </tr>
+        <tr>
+            <td align="right">产品描述：&nbsp;</td>
+            <td><textarea name="offer_description">{$info.offer_description}</textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="确认修改"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+[ 2016-06-13T23:33:14+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMailer/offer_id//buyer_id/14/status/1
+ERR: 参数错误或者未定义:buyer_id
+
+[ 2016-06-13T23:36:07+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMailer/offer_id//buyer_id/14/status/1
+ERR: 参数错误或者未定义:buyer_id
+

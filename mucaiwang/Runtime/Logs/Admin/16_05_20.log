@@ -1,0 +1,48 @@
+[ 2016-05-20T18:38:27+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/View/Purchase/purchase
+ERR: 无法加载控制器:View
+
+[ 2016-05-20T18:38:33+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Purchase/purchase
+ERR: 无法加载控制器:Purchase
+
+[ 2016-05-20T18:40:30+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Purchase/purchase
+ERR: 无法加载控制器:Purchase
+
+[ 2016-05-20T21:49:24+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Showlist/showlist.html
+ERR: 无法加载控制器:Showlist
+
+[ 2016-05-20T21:49:55+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Showlist/showlist.html
+ERR: 无法加载控制器:Showlist
+
+[ 2016-05-20T21:50:02+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Showlist/showlist.html
+ERR: 无法加载控制器:Showlist
+
+[ 2016-05-20T21:50:07+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Showlist/showlist.html
+ERR: 无法加载控制器:Showlist
+
+[ 2016-05-20T21:50:32+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-20T21:51:11+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-20T21:51:34+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-20T21:51:34+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-20T21:53:28+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/%E6%95%B0%E6%8D%AE%E6%88%90%E5%8A%9F%E5%86%99%E5%85%A5.html
+ERR: 非法操作:数据成功写入
+
+[ 2016-05-20T21:54:07+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/%E6%95%B0%E6%8D%AE%E6%88%90%E5%8A%9F%E5%86%99%E5%85%A5.html
+ERR: 非法操作:数据成功写入
+
+[ 2016-05-20T21:54:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/%C3%A6%C2%95%C2%B0%C3%A6%C2%8D%C2%AE%C3%A6%C2%88%C2%90%C3%A5%C2%8A%C2%9F%C3%A5%C2%86%C2%99%C3%A5%C2%85%C2%A5.html
+ERR: 非法操作:æ°æ®æååå¥
+
+[ 2016-05-20T22:01:48+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-20T22:08:19+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+

@@ -1,0 +1,41 @@
+[ 2016-05-29T01:34:43+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/senfMail
+ERR: 非法操作:senfMail
+
+[ 2016-05-29T01:36:05+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/add
+ERR: 非法操作:add
+
+[ 2016-05-29T01:36:46+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/add
+ERR: 非法操作:add
+
+[ 2016-05-29T18:46:52+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/Offer/sendMail/user_id/15
+ERR: 非法操作:Offer
+
+[ 2016-05-29T18:50:06+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMail/user_id/15
+ERR: 1054:Unknown column 'user_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mucai_offer_buyer` WHERE ( user_id=15 ) 
+
+[ 2016-05-29T18:51:03+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMail/user_id/15
+ERR: 参数错误或者未定义:buyer_id
+
+[ 2016-05-29T18:51:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMail/buyer_id/15
+ERR: 1054:Unknown column 'user_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mucai_offer_buyer` WHERE ( user_id= 15 ) 
+
+[ 2016-05-29T19:47:19+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMail/buyer_id/15
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Offer/sendMail.html
+
+[ 2016-05-29T19:49:23+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMail/buyer_id/15
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Offer/sendMail.html
+
+[ 2016-05-29T19:53:42+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMail/buyer_id/16
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Offer/sendMail.html
+
+[ 2016-05-29T19:55:30+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMail/buyer_id/17
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Offer/sendMail.html
+
+[ 2016-05-29T20:05:23+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/%20sendMailer/buyer_id/16
+ERR: 非法操作: sendMailer
+
+[ 2016-05-29T20:08:43+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/Offer/sendMailer/user_id/16
+ERR: 参数错误或者未定义:buyer_id
+

@@ -1,0 +1,65 @@
+用php结合phpmailer发送邮件
+2014-06-17 阿伦网络 阿伦网络
+
+ php本身提供了一个邮件发送函数mail，可以在程序中直接发送电子邮件，不过该函数要求服务器支持sendmail
+或者必须设置一台不需要中继的邮件发送服务器，但现在要找到一台不需要身份验证的邮件发送中继几乎不可能．
+所以使用mail函数往往无法成功发送email．
+　自己如果熟悉SMTP协议，结合socket功能就可以编写高效稳定的邮件发送程序，但对一般用户来说太困难．好在互联网上已经有很多别人编写好的邮件发送模块，我们只需要下载后简单调用即可，十分方便．
+　在此我们给用户推荐一个php下功能十分强大，易用且免费的SMTP类模块－PHPMailer
+
+PHPMailer是一个用于发送电子邮件的PHP函数包。它提供的功能包括：
+*.在发送邮时指定多个收件人，抄送地址，暗送地址和回复地址
+*.支持多种邮件编码包括：8bit，base64，binary和quoted-printable
+*.支持SMTP验证
+*.支持冗余SMTP服务器
+*.支持带附件的邮件和Html格式的邮件
+*.自定义邮件头
+*.支持在邮件中嵌入图片
+*.调试灵活
+*.经测试兼容的SMTP服务器包括：Sendmail,qmail,Postfix,Imail,Exchange等
+*.可运行在任何平台之上
+
+
+　下载该组件后，按如下示例编写代码即可实现php在线发送邮件．
+　
+ 一：前台表单
+<html>
+<body>
+<h3>phpmailer Unit Test</h3>
+请你输入<font color="#FF6666">收信</font>的邮箱地址:
+<form name="phpmailer" action="send.php" method="post">
+<input type="hidden" name="submitted" value="1"/>
+邮箱地址: <input type="text" size="50" name="address" />
+<br/>
+<input type="submit" value="发送"/>
+</form>
+</body>
+</html>
+　二：后台PHP程序
+
+　<?php
+require("class.phpmailer.php"); //下载的文件必须放在该文件所在目录
+$mail = new PHPMailer(); //建立邮件发送类
+$address = $_POST['address'];
+$mail->IsSMTP(); // 使用SMTP方式发送
+$mail->Host = "mail.xxxxx.com"; // 您的企业邮局域名
+$mail->SMTPAuth = true; // 启用SMTP验证功能
+$mail->Username = "user@xxxx.com"; // 邮局用户名(请填写完整的email地址)
+$mail->Password = "******"; // 邮局密码
+$mail->From = "user@xxxx.com"; //邮件发送者email地址
+$mail->FromName = "您的名称";
+$mail->AddAddress("$address", "");//收件人地址，可以替换成任何想要接收邮件的email信箱,格式是AddAddress("收件人email","收件人姓名")
+//$mail->AddReplyTo("", "");
+//$mail->AddAttachment("/var/tmp/file.tar.gz"); // 添加附件
+//$mail->IsHTML(true); // set email format to HTML //是否使用HTML格式
+$mail->Subject = "PHPMailer测试邮件"; //邮件标题
+$mail->Body = "Hello,这是测试邮件"; //邮件内容
+$mail->AltBody = "This is the body in plain text for non-HTML mail clients"; //附加信息，可以省略
+if(!$mail->Send())
+{
+ echo "邮件发送失败. <p>";
+ echo "错误原因: " . $mail->ErrorInfo;
+ exit;
+}
+echo "邮件发送成功";
+?>

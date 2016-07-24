@@ -1,0 +1,171 @@
+[ 2016-05-30T00:10:05+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/User/logout
+ERR: 非法操作:logout
+
+[ 2016-05-30T00:37:17+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-05-30T18:22:03+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/listcate
+ERR: 无法加载控制器:Pro
+
+[ 2016-05-30T18:22:09+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/addcate
+ERR: 无法加载控制器:Pro
+
+[ 2016-05-30T18:23:43+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Comuser/Pro/tianjia
+ERR: 非法操作:Pro
+
+[ 2016-05-30T18:25:29+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/addcate
+ERR: 无法加载控制器:Pro
+
+[ 2016-05-30T18:26:34+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/addcate
+ERR: 模板不存在:E:/web/php99/mucaiwang/Home/View/Pro/addcate.html
+
+[ 2016-05-30T19:26:26+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-05-30T19:27:54+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/offerlist/19
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-05-30T19:28:39+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/alterOffer/offer_id/29
+ERR: 非法操作:alterOffer
+
+[ 2016-05-30T19:29:32+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Offer/alterOffer/offer_id/29
+ERR: 非法操作:alterOffer
+
+[ 2016-05-30T20:20:18+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/xiugai
+ERR: 参数错误或者未定义:pro_id
+
+[ 2016-05-30T20:20:37+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:21:06+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:21:12+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:21:33+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:22:04+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:28:03+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:29:46+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:33:39+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:33:45+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:35:15+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:40:22+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/tianjia
+ERR: 不存在的图像文件
+
+[ 2016-05-30T20:40:45+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/tianjia
+ERR: 不存在的图像文件
+
+[ 2016-05-30T20:41:48+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:42:31+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T20:44:58+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/tianjia
+ERR: 不存在的图像文件
+
+[ 2016-05-30T21:13:20+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:14:30+08:00 ] 127.0.0.1 /mucaiwang//index.php/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:15:30+08:00 ] 127.0.0.1 /mucaiwang//index.php/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:17:30+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:18:47+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:19:02+08:00 ] 127.0.0.1 /mucaiwang//index.php/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:19:10+08:00 ] 127.0.0.1 /mucaiwang//index.php/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:22:53+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/prolist
+ERR: 非法操作:prolist
+
+[ 2016-05-30T21:23:04+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:27:24+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:29:18+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:30:02+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:33:31+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:33:59+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:34:18+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:36:22+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:36:34+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:38:05+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:39:00+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:39:19+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:40:25+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:41:42+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:43:00+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:43:13+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T21:43:35+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/%7BSILE_URL/$v['pro_salbumpath']%7D
+ERR: 非法操作:{SILE_URL
+
+[ 2016-05-30T22:56:48+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/tianjia
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-30T22:57:28+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/tianjia
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-30T22:57:31+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/tianjia
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-30T23:10:11+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/tianjia
+ERR: Think\Controller:diaplay方法不存在！
+
+[ 2016-05-30T23:10:25+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/tianjia
+ERR: XML标签语法错误 : name="v.pro_class" name="vv"
+

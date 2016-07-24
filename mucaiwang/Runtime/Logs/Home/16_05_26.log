@@ -1,0 +1,93 @@
+[ 2016-05-26T14:04:59+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:08:05+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:19:27+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:21:55+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:22:48+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:27:16+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:28:38+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:29:00+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:43:27+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:48:04+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/showcam
+ERR: 非法操作:showcam
+
+[ 2016-05-26T14:48:15+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/showcom
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:50:22+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/showcom
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:54:17+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:54:25+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T14:57:34+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T15:32:52+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/User/register
+ERR: 1054:Unknown column 'register_user_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mucai_com` WHERE ( 1=1 AND register_user_id='1' ) LIMIT 1  
+
+[ 2016-05-26T15:38:12+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/com
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T15:43:24+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/com
+ERR: 1054:Unknown column 'com_url' in 'field list'
+ [ SQL语句 ] : SELECT `user_name`,`user_email`,`user_job`,`user_phone`,`user_fixed_phone`,`portraiture`,`user_qq`,`com_url` FROM `mucai_register_user` WHERE ( 1=1 AND com_id='5' ) LIMIT 1  
+
+[ 2016-05-26T15:43:54+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/com
+ERR: 1054:Unknown column 'com_url' in 'field list'
+ [ SQL语句 ] : SELECT `user_name`,`user_email`,`user_job`,`user_phone`,`user_fixed_phone`,`portraiture`,`user_qq`,`com_url` FROM `mucai_register_user` WHERE ( 1=1 AND user_com_id='5' ) LIMIT 1  
+
+[ 2016-05-26T15:45:08+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/com
+ERR: 1054:Unknown column 'user_com_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mucai_register_user` WHERE ( 1=1 AND user_com_id='5' ) LIMIT 1  
+
+[ 2016-05-26T15:45:38+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Com/com
+ERR: 1054:Unknown column 'com_url' in 'field list'
+ [ SQL语句 ] : SELECT `user_name`,`user_email`,`user_job`,`user_phone`,`user_fixed_phone`,`portraiture`,`user_qq`,`com_url` FROM `mucai_register_user` WHERE ( 1=1 AND user_id='5' ) LIMIT 1  
+
+[ 2016-05-26T16:20:34+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/User/VerifyImg
+ERR: 非法操作:VerifyImg
+
+[ 2016-05-26T17:11:23+08:00 ] 127.0.0.1 /mucaiwang/index.php/User/register.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T17:29:59+08:00 ] 127.0.0.1 /mucaiwang/index.php/User/register.html
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-05-26T17:44:20+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/User/verify.html
+ERR: 非法操作:verify
+
+[ 2016-05-26T20:00:05+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buy/offer_id/7/home_name/15
+ERR: 参数错误或者未定义:home_id
+
+[ 2016-05-26T20:00:55+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buy/offer_id/7/home_id/15
+ERR: 模板不存在:E:/web/php99/mucaiwang/Home/View/Buy/buy.html
+
+[ 2016-05-26T20:15:01+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Buy/buy/offer_id/7/home_id/15
+ERR: 模板不存在:E:/web/php99/mucaiwang/Home/View/Buy/buy.html
+
+[ 2016-05-26T20:43:47+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/buyList/offer_id/24
+ERR: 1054:Unknown column '$offer_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mucai_offer` WHERE ( $offer_id ) LIMIT 1  
+

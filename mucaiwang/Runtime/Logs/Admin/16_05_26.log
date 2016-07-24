@@ -1,0 +1,9 @@
+[ 2016-05-26T00:44:03+08:00 ] 127.0.0.1 /mucaiwang/index.php/Admin/User/index
+ERR: 无法加载控制器:User
+
+[ 2016-05-26T01:07:52+08:00 ] 127.0.0.1 /mucaiwang//index.php/Admin/Offer/lookuser/offer_user_id/11
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Offer/lookuser.html
+
+[ 2016-05-26T01:09:16+08:00 ] 127.0.0.1 /mucaiwang//index.php/Admin/Offer/lookuser/offer_user_id/11
+ERR: 模板不存在:E:/web/php99/mucaiwang/Admin/View/Offer/lookuser.html
+

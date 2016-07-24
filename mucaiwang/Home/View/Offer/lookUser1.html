@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><a href="__CONTROLLER__/offerlist/offer_user_id/{$Think.session.home_id}"><h4>返回</h4></a></div>
+<table width="100%" border="1px dashed" cellpadding="2" cellspacing="0">
+    <tr>
+        <td align="center">报价人id</td>
+        <td align="center">公司id</td>
+        <td align="center">邮箱</td>
+        <td align="center">求购人</td>
+        <td align="center">职位</td>
+        <td align="center">电话</td>
+        <td align="center">QQ</td>
+        <td align="center">固定电话</td>
+        <td align="center">评论</td>
+
+        <!--<td colspan="1" align="center">操作</td>-->
+        <!--<td align="center">查看记录</td>-->
+
+    </tr>
+    <tr>
+        <td align="center">{$z.user_id}</td>
+        <td align="center" bgcolor="#7fffd4">
+            <a href="__CONTROLLER__/showCom/com_id/{$z.com_id}">{$info.com_name}</a>
+        </td>
+        <td align="center">{$z.user_email}</td>
+        <td align="center" bgcolor="#7fffd4">{$z.user_true_name}</td>
+        <td align="center">{$z.user_job}</td>
+        <td align="center" bgcolor="#7fffd4">{$z.user_phone}</td>
+        <td align="center">{$z.user_qq}</td>
+        <td align="center" bgcolor="#7fffd4">{$z.user_fixed_phone}</td>
+        <!--这里的buyer_id并不是指买家，而是指自己-->
+        <td align="center"><a href="{:U('Home/Offer/showDesc',array(offer_user_id=> $z['user_id']))}">查看</a></td>
+    </tr>
+    <!--__MODULE__/Offer/showDesc/buyer_id/{$z.user_id}-->
+    <tr>
+        <td colspan="20" style="text-align: center;">
+            {$pagelist}
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

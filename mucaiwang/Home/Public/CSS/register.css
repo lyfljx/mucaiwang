@@ -1,0 +1,335 @@
+@CHARSET "UTF-8";
+/* CSS Document */
+/*公用*/
+.comWidth {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*topBar*/
+.topBar {
+    height: 31px;
+    background-color: #F7F7F7;
+    line-height: 31px;
+}
+
+.topBar a:hover {
+    color: red;
+}
+
+/*logo*/
+.logoBar {
+    height: 85px;
+    background-color: #006666
+}
+
+.logo {
+    padding-left: 35px;
+    padding-top: 9px;
+}
+
+/*注册*/
+.login_logo .comWidth {
+    width: 460px;
+}
+
+.welcome_title {
+    font: 22px/85px "Microsoft YaHei", "微软雅黑";
+    color: #FFF;
+    float: left;
+    padding-left: 45px;
+}
+
+.loginBox {
+    width: 458px;
+    border: #999 solid 1px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.login_cont {
+    padding: 15px 76px;
+}
+
+.login_input {
+    border: #999 solid 1px;
+    height: 23px;
+    line-height: 30px \9;
+    text-indent: 5px;
+    width: 100%;
+}
+
+/*  .mb_10{margin-bottom:10px;} */
+.autoLogin {
+    padding-top: 27px;
+    padding-bottom: 28px;
+}
+
+.checked {
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+}
+
+/*.reg_btn{width:270px; height:35px; background:url(/mucaiwang/Home/View/Public/CSS/reg.jpg) left top no-repeat;}*/
+/*.reg_link{width:115px; height:31px; background:url(/mucaiwang/Home/View/Public/CSS/red_link.jpg) left top no-repeat; position:absolute; right:31px; bottom:-31px;}*/
+.red_logo .comWidth {
+    width: 630px;
+}
+
+.regBox {
+    width: 680px;
+    margin: 10px auto;
+    border: #CCC solid 1px;
+}
+
+.reg_item {
+    font: 14px/34px "宋体";
+    width: 100px;
+    text-align: right;
+    float: left;
+}
+
+.reg_item i {
+    color: red;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.input_item {
+    width: 260px;
+    float: left;
+}
+
+.regBox li {
+    height: 45px;
+    vertical-align: top;
+}
+
+.regBox .autoLogin {
+    height: 46px;
+    padding: 0;
+}
+
+.regBox .login_cont {
+    padding: 29px 25px 20px 25px;
+}
+
+.reg_info {
+    color: red;
+    font-size: 14px;
+    line-height: 13px;
+    margin: 12px;
+}
+
+.Get_verify img {
+    width: 103px;
+    height: 30px;
+    border: 1px solid #999;
+    margin-left: 10px;
+}
+
+/*这里的样式是登录页面和注册页面共用的，class名字都是一样的*/
+.login_btn {
+    width: 309px;
+    height: 36px;
+}
+
+/*left  top no-repeat*/
+
+.com_trade {
+    border: 2px solid #BDBDBD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/*<!--表单验证样式-->*/
+
+/*td{line-height:38px;}
+.registerform .inputxt,
+.registerform textarea{
+padding:10px;
+width:245px;
+}*/
+
+.Validform_checktip {
+    display: none;
+    line-height: 38px;
+    height: 38px;
+    width: 60px;
+}
+
+.Validform_wrong,
+.Validform_right,
+.Validform_loading {
+    display: block;
+/*!important;*/
+    /*屏蔽掉了none属性，优先引用important中的属性*/
+}
+
+.info {
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    padding: 8px 20px 8px 10px;
+    color: #666;
+    float: left;
+    position: relative;
+    display: none;
+    line-height: 20px;
+}
+
+.dec {
+    top: 9px;
+    display: block;
+    height: 17px;
+    overflow: hidden;
+    position: absolute;
+    left: -8px;
+    width: 8px;
+}
+
+.dec s {
+    font-family: simsun;
+    font-size: 16px;
+    height: 19px;
+    left: 0;
+    line-height: 21px;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    width: 17px;
+}
+
+.dec .dec1 {
+    color: #ccc;
+}
+
+.dec .dec2 {
+    color: #fff;
+    left: 1px;
+}
+
+/*这是validata必须有的样式*/
+
+.Validform_checktip {
+    margin-left: 8px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    color: #999;
+    font-size: 12px;
+}
+
+.Validform_right {
+    color: #71b83d;
+    padding-left: 20px;
+    background: url(../img/right.png) no-repeat left center;
+    width: 200px;
+
+}
+
+.Validform_wrong {
+    color: red;
+    padding-left: 20px;
+    white-space: nowrap;
+    background: url(../img/error.png) no-repeat left center;
+    width: 200px;
+}
+
+.Validform_loading {
+    padding-left: 20px;
+    background: url(../img/onLoad.gif) no-repeat left center;
+}
+
+.Validform_error {
+    background-color: #ffe7e7;
+}
+
+#Validform_msg {
+    color: #7d8289;
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+    width: 280px;
+    -webkit-box-shadow: 2px 2px 3px #aaa;
+    -moz-box-shadow: 2px 2px 3px #aaa;
+    background: #fff;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    z-index: 99999;
+    display: none;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+}
+
+#Validform_msg .iframe {
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    z-index: -1;
+}
+
+#Validform_msg .Validform_title {
+    line-height: 25px;
+    height: 25px;
+    text-align: left;
+    font-weight: bold;
+    padding: 0 8px;
+    color: #fff;
+    position: relative;
+    background-color: #000;
+}
+
+#Validform_msg a.Validform_close:link,
+#Validform_msg a.Validform_close:visited {
+    line-height: 22px;
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#Validform_msg a.Validform_close:hover {
+    color: #cc0;
+}
+
+#Validform_msg .Validform_info {
+    padding: 8px;
+    border: 1px solid #000;
+    border-top: none;
+    text-align: left;
+}
+/*密码强度*/
+.passwordStrength{
+
+}
+.passwordStrength b{
+    font-weight:normal;
+}
+.passwordStrength b,.passwordStrength span{
+    display:inline-block;
+    vertical-align:middle;
+    line-height:16px;
+    line-height:18px\9;
+    height:16px;
+}
+.passwordStrength span{
+    width:45px;
+    text-align:center;
+    background-color:#d0d0d0;
+    border-right:1px solid #fff;
+}
+.passwordStrength .last{
+    border-right:none;
+}
+.passwordStrength .bgStrength{
+    color:#fff;
+    background-color:#71b83d;
+}
+#demo1 .passwordStrength{
+    margin-left:8px;
+}

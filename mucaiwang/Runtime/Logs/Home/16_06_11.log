@@ -1,0 +1,129 @@
+[ 2016-06-11T01:13:01+08:00 ] 127.0.0.1 /mucaiwang//index.php/Pro/showlist/pro_user_id/19.html
+ERR: 1146:Table 'mucai.mucai_class' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mucai_class`
+
+[ 2016-06-11T14:44:14+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/desc/pro_user_id/14
+ERR: 参数错误或者未定义:pro_id
+
+[ 2016-06-11T14:44:36+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/desc/pro_user_id/14
+ERR: 参数错误或者未定义:pro_id
+
+[ 2016-06-11T17:20:02+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/tianjia
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `com_id` FROM `mucai_register_user` WHERE ( user_id=  ) LIMIT 1  
+
+[ 2016-06-11T17:20:04+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/js/kindeditor/themes/default/default.css
+ERR: 非法操作:js
+
+[ 2016-06-11T17:20:04+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/js/kindeditor/plugins/code/prettify.css
+ERR: 非法操作:js
+
+[ 2016-06-11T17:20:05+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/js/kindeditor/lang/zh_CN.js
+ERR: 非法操作:js
+
+[ 2016-06-11T17:20:05+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/js/kindeditor/plugins/code/prettify.js
+ERR: 非法操作:js
+
+[ 2016-06-11T17:20:05+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/Pro/js/kindeditor/kindeditor.js
+ERR: 非法操作:js
+
+[ 2016-06-11T17:24:21+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T17:25:13+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T17:25:35+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/php/file_manager_json.php?path=&order=NAME&dir=image&1465637134948
+ERR: 无法加载控制器:Php
+
+[ 2016-06-11T17:26:28+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T17:38:39+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T17:39:01+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/php/upload_json.php?dir=file
+ERR: 无法加载控制器:Php
+
+[ 2016-06-11T17:39:15+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/php/upload_json.php?dir=file
+ERR: 无法加载控制器:Php
+
+[ 2016-06-11T17:40:52+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T17:40:57+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/php/upload_json.php?dir=file
+ERR: 无法加载控制器:Php
+
+[ 2016-06-11T17:42:41+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T18:27:20+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T18:27:42+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/php/upload_json.php?dir=image
+ERR: 无法加载控制器:Php
+
+[ 2016-06-11T18:32:25+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T18:33:16+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T18:35:21+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T18:38:19+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T18:41:33+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T18:44:19+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T18:53:43+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T18:55:13+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/php/upload_json.php?dir=image
+ERR: 无法加载控制器:Php
+
+[ 2016-06-11T18:57:21+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T18:58:09+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T19:05:25+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T19:06:44+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/php/upload_json.php?dir=image
+ERR: 无法加载控制器:Php
+
+[ 2016-06-11T19:21:50+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T19:23:45+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T19:24:34+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T19:40:21+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/plugins/code/prettify.css
+ERR: 无法加载控制器:Plugins
+
+[ 2016-06-11T19:40:29+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/php/upload_json.php?dir=image
+ERR: 无法加载控制器:Php
+
+[ 2016-06-11T19:42:11+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/php/upload_json.php?dir=image
+ERR: 无法加载控制器:Php
+
+[ 2016-06-11T19:42:35+08:00 ] 127.0.0.1 /mucaiwang//index.php/Home/php/upload_json.php?dir=image
+ERR: 无法加载控制器:Php
+
+[ 2016-06-11T21:20:53+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Index/listoffer/offer_id/41
+ERR: 参数错误或者未定义:buyer_id
+
+[ 2016-06-11T21:58:27+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Pro/tianjia
+ERR: 1054:Unknown column 'pro_pclass_area' in 'field list'
+ [ SQL语句 ] : INSERT INTO `mucai_pro` (`pro_create_time`,`com_id`,`pro_name`,`pro_style`,`pro_unitprice`,`pro_grow_area`,`pro_desc`,`pro_cut_time`,`pro_user_id`,`pro_local_area`,`pro_class_id`,`pro_pclass_area`) VALUES ('1465653498','9','','','','','','','14','请选择市区请选择市区','0102','01')
+

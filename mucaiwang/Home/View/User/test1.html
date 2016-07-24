@@ -1,0 +1,528 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>注册</title>
+
+    <link type="text/css" rel="stylesheet" href=" ../css/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css/register.css">
+    <style type="text/css">
+        .com_trade {
+            border: 2px solid #BDBDBD;
+        }
+    </style>
+    <!--body样式-->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+    </style>
+    <!--表单验证样式-->
+    <style type="text/css">
+        /*td{line-height:38px;}
+.registerform .inputxt,
+.registerform textarea{
+padding:10px;
+width:245px;
+}*/
+
+        .Validform_checktip {
+            display: none;
+            line-height: 38px;
+            height: 38px;
+            width: 60px;
+        }
+
+        .Validform_wrong,
+        .Validform_right,
+        .Validform_loading {
+            display: block;
+        }
+
+        .info {
+            margin-left: 8px;
+            border: 1px solid #ccc;
+            padding: 8px 20px 8px 10px;
+            color: #666;
+            float: left;
+            position: relative;
+            display: none;
+            line-height: 20px;
+        }
+
+        .dec {
+            top: 9px;
+            display: block;
+            height: 17px;
+            overflow: hidden;
+            position: absolute;
+            left: -8px;
+            width: 8px;
+        }
+
+        .dec s {
+            font-family: simsun;
+            font-size: 16px;
+            height: 19px;
+            left: 0;
+            line-height: 21px;
+            position: absolute;
+            text-decoration: none;
+            top: 0;
+            width: 17px;
+        }
+
+        .dec .dec1 {
+            color: #ccc;
+        }
+
+        .dec .dec2 {
+            color: #fff;
+            left: 1px;
+        }
+        /*这是validata必须有的样式*/
+
+        .Validform_checktip {
+            margin-left: 8px;
+            line-height: 20px;
+            height: 20px;
+            overflow: hidden;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .Validform_right {
+            color: #71b83d;
+            padding-left: 20px;
+            background: url(../images/right.png) no-repeat left center;
+        }
+
+        .Validform_wrong {
+            color: red;
+            padding-left: 20px;
+            white-space: nowrap;
+            background: url(../images/error.png) no-repeat left center;
+            width: 200px;
+        }
+
+        .Validform_loading {
+            padding-left: 20px;
+            background: url(../images/onLoad.gif) no-repeat left center;
+        }
+
+        .Validform_error {
+            background-color: #ffe7e7;
+        }
+
+        #Validform_msg {
+            color: #7d8289;
+            font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+            width: 280px;
+            -webkit-box-shadow: 2px 2px 3px #aaa;
+            -moz-box-shadow: 2px 2px 3px #aaa;
+            background: #fff;
+            position: absolute;
+            top: 0px;
+            right: 50px;
+            z-index: 99999;
+            display: none;
+            filter: progid: DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+        }
+
+        #Validform_msg .iframe {
+            position: absolute;
+            left: 0px;
+            top: -1px;
+            z-index: -1;
+        }
+
+        #Validform_msg .Validform_title {
+            line-height: 25px;
+            height: 25px;
+            text-align: left;
+            font-weight: bold;
+            padding: 0 8px;
+            color: #fff;
+            position: relative;
+            background-color: #000;
+        }
+
+        #Validform_msg a.Validform_close:link,
+        #Validform_msg a.Validform_close:visited {
+            line-height: 22px;
+            position: absolute;
+            right: 8px;
+            top: 0px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #Validform_msg a.Validform_close:hover {
+            color: #cc0;
+        }
+
+        #Validform_msg .Validform_info {
+            padding: 8px;
+            border: 1px solid #000;
+            border-top: none;
+            text-align: left;
+        }
+    </style>
+    <link rel="stylesheet" href="<?php  echo HOME_CSS_URL?>jquery.inputbox.css" type="text/css" />
+    <script src="<?php echo  HOME_JS_URL?>jquery.js" type="text/javascript"></script>
+    <script src="<?php echo  HOME_JS_URL?>jquery.inputbox.js" type="text/javascript"></script>
+    <script src="<?php echo  HOME_JS_URL?>jquery.ganged.js" type="text/javascript"></script>
+
+    <!--这是省份城市选择器-->
+    <script type="text/javascript">
+        $(function() {
+            var data = [
+                '01:北京', '0101:北京',
+                '02:江苏', '0201:南京', '0202:苏州', '0203:无锡', '0204:常州',
+                '03:浙江', '0301:杭州', '0302:嘉兴', '0303:绍兴',
+            ];
+            $('#test1').ganged({
+                'data': data,
+                'width': 100,
+                'height': 30
+            });
+            $('#test2').ganged({
+                'data': data
+            });
+        })
+    </script>
+    <!--[if IE 6]>
+<!--<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>-->
+    <!--<script type="text/javascript" src="js/ie6Fixpng.js"></script>-->
+    <!-- [endif] -->
+</head>
+<!--命名要规范-->
+
+<body>
+<!--头部每一个模块用一个div来表示-->
+<div class="headerBar">
+    <div class="logoBar red_logo">
+        <div class="comWidth">
+            <div class="logo fl">
+                <a href="#"><img src="<?php echo HOME_IMG_URL;?>logo.png" alt="中国木材网"></a>
+            </div>
+            <h3 class="welcome_title">欢迎注册</h3>
+        </div>
+    </div>
+</div>
+
+<div class="regBox">
+    <div class="login_cont">
+        <form  class="registerform" method="post" enctype="multipart/form-data" action=" __SELF__">
+            <ul class="login" style="line-height: 20px;">
+
+
+                <!--
+
+                                        <li>
+                                            <span class="reg_item"><i>*</i><label for="user_name">用户名：</label></span> <span class="reg_info"><?php echo $errorinfo['user_name']?></span>
+
+                                            <div class="input_item">
+                                                <input type="text" name="user_name" id="user_name" placeholder="请输入用户名" class="login_input user_icon">
+                                            </div>
+                                            <!--class有有两个别名分别是login_input user_icon-->
+                <!--</li>-->
+
+                <li>
+
+                    <span class="reg_item">昵称：</span>
+                    <div class="input_item">
+                        <input type="text" value="" name="name" class="login_input " datatype="s6-18" nullmsg="请输入您的昵称！" errormsg="昵称至少6个字符,最多18个字符！" />
+                    </div>
+                    <!--<span class="reg_info">-->
+                          <span>
+                    	<div class="Validform_checktip"></div>
+                        <div class="info">昵称至少6个字符,最多18个字符<span class="dec"><s class="dec1">&#9670;</s><s class="dec2">&#9670;</s></span></div>
+			              </span>
+                </li>
+
+
+                <li>
+
+                    <span class="reg_item"><i>*</i><label for="user_password">密码：</label></span><span class="reg_info"><?php echo $errorinfo['user_password'] ?></span>
+                    <div class="input_item">
+                        <input type="password" id="user_password" name="user_password" class="login_input ">
+
+                    </div>
+
+                </li>
+                <li>
+                    <span class="reg_item"><i>*</i><label for="password2">确认密码：</label></span><span class="reg_info"><?php echo  $errorinfo['password2'] ?></span>
+                    <div class="input_item">
+                        <input type="password" id="password2" name="password2" placeholder="请输入正确密码" class="login_input ">
+
+                    </div>
+                </li>
+
+                <li>
+                    <span class="reg_item"><i>*</i><label for="user_email">电子邮箱：</label></span><span class="reg_info"><?php echo  $errorinfo['user_email']?></span>
+                    <div class="input_item">
+                        <input type="email" id="user_email" name="user_email" placeholder="请输入合法邮箱" class="login_input ">
+
+                    </div>
+                </li>
+                <li>
+                    <span class="reg_item"><i>*</i><label for="user_true_name">真实姓名：</label></span><span class="reg_info"><?php echo  $errorinfo['user_true_name']?></span>
+                    <div class="input_item">
+                        <input type="text" name="user_true_name" id="user_true_name" class="login_input ">
+
+                    </div>
+                </li>
+
+                <!--<li>-->
+                <!--<span class="reg_item"><i>*</i><label for=" ">性别：</label></span><span style="color: red"><?php  ?></span>-->
+                <!--&lt;!&ndash;<input type="hidden"  name="user_sex" value="" >&ndash;&gt;-->
+                <!--&lt;!&ndash;<input type="radio"  name="sex1" value="1" id=""> <label for="">男</label>&ndash;&gt;-->
+                <!--&lt;!&ndash;<input type="radio"   name="sex2" value="2" id=""> <label for="">女</label>&ndash;&gt;-->
+                <!--&lt;!&ndash;<input type="radio"  name="sex3" value="3"  id=""> <label for="">保密</label>&ndash;&gt;-->
+
+                <!--</div>-->
+                <!--</li>   -->
+                <li>
+                    <span class="reg_item"><i>*</i><label for="user_job">您的职位：</label></span><span class="reg_info"><?php echo  $errorinfo['user_job']?></span>
+                    <div class="input_item">
+                        <input type="text" name="user_job" id="user_job" placeholder="请输入您的职位" class="login_input ">
+
+                    </div>
+                </li>
+                <li>
+                    <span class="reg_item"><i>*</i><label for="user_phone">手机：</label></span><span class="reg_info"><?php echo  $errorinfo['user_phone']?></span>
+                    <div class="input_item">
+                        <input type="text" name="user_phone" id="user_phone" placeholder="请输入11位的手机号" class="login_input ">
+
+                    </div>
+                </li>
+                <li>
+                    <span class="reg_item"><i>*</i><label for="user_fixed_phone">固定电话：</label></span><span class="reg_info"><?php echo  $errorinfo['user_fixed_phone']?></span>
+
+                    <div class="input_item">
+                        <input type="text" name="user_fixed_phone" id="user_fixed_phone" placeholder="格式:区号-电话号码，如:0769-85814488" class="login_input ">
+
+                    </div>
+                </li>
+
+                <li>
+                    <span class="reg_item"><i>*</i><label for="portraiture">传真：</label></span><span class="reg_info"><?php echo  $errorinfo['portraiture']?></span>
+
+                    <div class="input_item">
+                        <input type="text" name="portraiture" id="portraiture" placeholder="格式：区号-传真号码，如：0769-85814488" class="login_input ">
+
+                    </div>
+                </li>
+                <li>
+                    <span class="reg_item"><i>*</i><label for="user_qq">QQ：</label></span><span class="reg_info"><?php echo  $errorinfo['user_qq']?></span>
+                    <div class="input_item">
+                        <input type="text" name="user_qq" id="user_qq" placeholder="请输入QQ" class="login_input">
+
+                    </div>
+                </li>
+                <li>
+                    <span class="reg_item"><i>*</i><label for="com_name">公司名称：</label></span><span class="reg_info"><?php echo  $errorinfo['com_name']?></span>
+
+                    <div class="input_item">
+                        <input type="text" name="com_name" id="com_name" placeholder="请输入合法公司名称" class="login_input ">
+                    </div>
+                </li>
+                <li>
+                    <span class="reg_item"><i>*</i><label for="com_area">公司所在地：</label></span>
+                    <div id="test2" style="float:left; margin-right:50px;" id="com_area">
+                        <input type="hidden" class="province" value="010000" />
+                        <input type="hidden" class="city" value="010100" />
+                        <input type="hidden" class="area" value="010101" />
+                        <div name="province" type="selectbox" style="z-index:1;">
+                            <div class="opts"></div>
+                        </div>
+                        <div name="city" type="selectbox" style="z-index:1;">
+                            <div class="opts"></div>
+                        </div>
+                        <!--<div name="area" type="selectbox" style="z-index:1;"><div class="opts"></div></div>-->
+                    </div>
+
+                    <script src="<?php echo HOME_JS_URL?>联动下拉框.js"></script>
+
+                    <!--<input type="text" name="com_area" id="com_area" placeholder="格式：省份-城市" class="login_input ">-->
+                    <span class="reg_info"><?php echo  $errorinfo['com_area']?></span>
+
+                </li>
+
+                <li>
+                    <span class="reg_item"><i>*</i><label for="com_trade">所属行业：</label></span><span class="reg_info"><?php echo  $errorinfo['com_trade']?></span>
+                    <div class="input_item">
+
+                        <select name="com_trade" id="com_trade">
+                            <option value="0" selected="selected">--请选择--</option>
+                            <foreach name="com_trade" item="v">
+
+                                <option value="{$v.trade_id}">{$v.com_trade}</option>
+
+                            </foreach>
+
+                        </select>
+
+                    </div>
+                </li>
+
+                <li>
+                    <!-- 无需验证 -->
+                    <span class="reg_item"><i>*</i>公司属性:</span>
+                    <select name="com_attribute">
+
+                        <option value="0">--请选择--</option>
+                        <foreach name="com_attribute" item="v">
+
+                            <option value="{$v.com_attribute_id}">
+
+
+                                {$v.com_attribute}
+
+
+                            </option>
+                        </foreach>
+
+
+                    </select>
+                </li>
+                <!--<li>-->
+                <!--<span class="reg_item"><i>*</i><label for="com_address">公司所在地：</label></span>-->
+                <!--<span style="color: red;font-size:16px;line-height:23px;padding:13px;"><?php echo  $errorinfo['com_attribute']?></span>-->
+                <!--<div class="input_item"style="display: inline-block;">-->
+
+                <!--<input type="text" name="com_address" placeholder="请输入合法公司名称" class="login_input "><span style="color: red"><?php ?></span>-->
+
+                <!--</div>-->
+                <!--</li>-->
+
+                <li>
+                    <span class="reg_item"><i>*</i><label for="com_address">主营地址：</label></span><span class="reg_info"><?php echo  $errorinfo['com_address']?></span>
+                    <div class="input_item">
+                        <input type="text" name="com_address" placeholder="" id="com_address" class="login_input ">
+
+                    </div>
+                </li>
+                <li>
+                    <span class="reg_item"><i>*</i><label for="com_main_pro"> 主营产品：</label></span> <span class="reg_info"><?php echo  $errorinfo['com_main_pro']?></span>
+                    <div class="input_item">
+                        <input type="text" name="com_main_pro" id="com_main_pro" placeholder="" class="login_input ">
+
+                    </div>
+                </li>
+                <li>
+                    <span class="reg_item"><i>*</i><label for="com_owned_market">所属市场：</label></span><span class="reg_info"><?php echo  $errorinfo['com_owned_market']?></span>
+                    <div class="input_item">
+                        <select name="com_owned_market" id="com_owned_market">
+                            <option value="">请选择市场</option>
+                            <foreach name="com_market" item="v">
+
+                                <option value="{$v.market_id}">
+
+                                    {$v.com_owned_market}
+
+
+                                </option>
+
+
+                            </foreach>
+
+
+                        </select>
+
+                    </div>
+                </li>
+
+                <li>
+                    <span class="reg_item"><i>*</i><label for="com_url">公司网址：</label></span> <span class="reg_info"><?php echo  $errorinfo['com_url']?></span>
+
+                    <div class="input_item">
+                        <input type="url" name="com_url" id="com_url" placeholder="" class="login_input ">
+
+                    </div>
+                </li>
+
+                <li>
+                    <span class="reg_item"><i>*</i><label for="verify">输入验证码：</label></span><span class="Get_verify"><img alt="验证码图" src=" __CONTROLLER__/VerifyImg"
+                                                                                                                          onclick="this.src=' __CONTROLLER__/VerifyImg/'+Math.random()"></span><span class="reg_info"><?php echo  $errorinfo['verify']?></span>
+
+                    <div class="input_item" style="width: 100px;">
+                        <input type="text" name="verify" id="verify" placeholder="请输入验证码" class="login_input " required="required">
+
+                    </div>
+                </li>
+                <!-- <li><span class="reg_item"><i>*</i>头像：</span><div class="input_item"><input type="file"  name="myFace" ></div></li>-->
+                <!-- <li class="autoLogin"><span class="reg_item">&nbsp;</span><input type="checkbox" id="t1" class="checked"><label for="t1">我同意什么什么条款</label>
+
+        </li> -->
+                <li>
+                    <span class="reg_item">&nbsp;</span>
+
+                    <button style="border:none;width:270px;height:35px;outline:none;padding: 0px;"><img
+                            src="<?php echo HOME_IMG_URL;?>reg.jpg" alt=""/></button>
+                </li>
+
+            </ul>
+        </form>
+    </div>
+</div>
+
+<div class="hr_25"></div>
+<!--<div class="footer">-->
+<!-- 	<p><a href="#">慕课简介</a><i>|</i><a href="#">慕课公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：400-675-1234</p> -->
+<!-- 	<p>Copyright &copy; 2006 - 2014 慕课版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p> -->
+<!-- 	<p class="web"><a href="#"><img src="images/webLogo.jpg" alt="logo"></a><a href="#"><img src="images/webLogo.jpg" alt="logo"></a><a href="#"><img src="images/webLogo.jpg" alt="logo"></a><a href="#"><img src="images/webLogo.jpg" alt="logo"></a></p> -->
+<!-- </div> -->
+
+<!--这是表单验证插件配置-->
+<script type="text/javascript" src="demo/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="demo/js/Validform_v5.3.2_min.js"></script>
+
+<script type="text/javascript" src="demo/plugin/passwordStrength/passwordStrength-min.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        //$(".registerform").Validform();  //就这一行代码！;
+        var getInfoObj = function() {
+            return $(this).parents("div").next().find(".info");
+        }
+        $("[datatype]").focusin(function() {
+            if (this.timeout) {
+                clearTimeout(this.timeout);
+            }
+            var infoObj = getInfoObj.call(this);
+            if (infoObj.siblings(".Validform_right").length != 0) {
+                return;
+            }
+            infoObj.show().siblings().hide();
+        }).focusout(function() {
+            var infoObj = getInfoObj.call(this);
+            this.timeout = setTimeout(function() {
+                infoObj.hide().siblings(".Validform_wrong,.Validform_loading").show();
+            }, 0);
+        });
+        $(".registerform").Validform({
+            tiptype: 2,
+            usePlugin: {
+                passwordstrength: {
+                    minLen: 6,
+                    maxLen: 18,
+                    trigger: function(obj, error) {
+                        if (error) {
+                            obj.parent().next().find(".passwordStrength").hide().siblings(".info").show();
+                        } else {
+                            obj.removeClass("Validform_error").parent().next().find(".passwordStrength").show().siblings().hide();
+                        }
+                    }
+                }
+            }
+        });
+    })
+</script>
+</body>
+
+</html>

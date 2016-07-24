@@ -1,0 +1,13 @@
+[ 2016-06-18T13:05:32+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/showDesc.html
+ERR: 参数错误或者未定义:offer_user_id
+
+[ 2016-06-18T13:21:29+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/lookUser/offer_user_id/15
+ERR: 参数错误或者未定义:offer_id
+
+[ 2016-06-18T13:50:02+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Desc/buyDesc
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `user_id` = 15' at line 1
+ [ SQL语句 ] : UPDATE `mucai_register_user` SET  WHERE `user_id` = 15
+
+[ 2016-06-18T14:27:49+08:00 ] 127.0.0.1 /mucaiwang/index.php/Home/Offer/offerlist
+ERR: 参数错误或者未定义:offer_user_id
+
